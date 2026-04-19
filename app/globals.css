@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #F5F4EF;
+  --surface: #FFFFFF;
+  --border: #E5E4DC;
+  --text: #0A0908;
+  --muted: #78716C;
+  --accent: #6D28D9;
+  --accent-hover: #5B21B6;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-jakarta), sans-serif;
+  overflow-x: hidden;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0A0908; }
+::-webkit-scrollbar-thumb { background: rgba(109,40,217,0.4); border-radius: 2px; }
+
+/* ─── Selection ─── */
+::selection { background: rgba(109,40,217,0.15); color: #0A0908; }
+
+/* ─── Entrance animations ─── */
+.animate-enter {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.animate-enter.is-visible { opacity: 1; transform: translateY(0); }
+
+.animate-enter-delay-1 { transition-delay: 0.07s; }
+.animate-enter-delay-2 { transition-delay: 0.14s; }
+.animate-enter-delay-3 { transition-delay: 0.21s; }
+.animate-enter-delay-4 { transition-delay: 0.28s; }
+.animate-enter-delay-5 { transition-delay: 0.35s; }
+.animate-enter-delay-6 { transition-delay: 0.42s; }
+
+/* ─── Dot grid texture ─── */
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(0,0,0,0.07) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+/* ─── Fine grid (for dark sections) ─── */
+.fine-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* ─── Hero headline ─── */
+.hero-headline {
+  font-size: clamp(2.8rem, 6.5vw, 6rem);
+  line-height: 1.0;
+  letter-spacing: -0.03em;
+}
+@media (min-width: 1280px) { .hero-headline { font-size: clamp(5rem, 6vw, 7rem); } }
+@media (min-width: 1536px) { .hero-headline { font-size: 7.5rem; } }
+
+/* ─── Service row hover ─── */
+.service-row {
+  border-bottom: 1px solid var(--border);
+  transition: background-color 0.2s ease;
+}
+.service-row:hover { background-color: rgba(109,40,217,0.04); }
+
+.service-row-dark {
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  transition: background-color 0.2s ease;
+}
+.service-row-dark:hover { background-color: rgba(255,255,255,0.025); }
+
+/* ─── Card (light) ─── */
+.card {
+  background: #FFFFFF;
+  border: 1px solid var(--border);
+  transition: border-color 0.22s ease, box-shadow 0.22s ease, transform 0.22s cubic-bezier(0.16,1,0.3,1);
+}
+.card:hover {
+  border-color: rgba(109,40,217,0.3);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+/* ─── Form inputs ─── */
+.form-input {
+  width: 100%;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px;
+  padding: 13px 16px;
+  color: white;
+  font-family: var(--font-jakarta), sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.form-input::placeholder { color: rgba(255,255,255,0.22); }
+.form-input:focus {
+  border-color: rgba(109,40,217,0.55);
+  background: rgba(109,40,217,0.06);
+  box-shadow: 0 0 0 3px rgba(109,40,217,0.10);
+}
+textarea.form-input { resize: vertical; min-height: 130px; }
