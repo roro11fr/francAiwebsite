@@ -1,6 +1,6 @@
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
-import { Hero } from '@/sections/Hero'
+import { HeroCinematic } from '@/sections/HeroCinematic'
 import { Services } from '@/sections/Services'
 import { BusinessTypes } from '@/sections/BusinessTypes'
 import { PainPoints } from '@/sections/PainPoints'
@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <Hero />
+      <HeroCinematic />
       <PainPoints />
       <Services />
       <BusinessTypes />
