@@ -1,10 +1,86 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { useLanguage } from '@/context/LanguageContext'
 import { Button } from '@/components/ui/Button'
-import { LogoMark } from '@/components/LogoMark'
+
+// f_logo.png is 1071×566 — tightly cropped F mark, transparent background
+// At 36px height the natural width is 68px
+
+const F_H = 38
+const F_W = 72
+
+function NavbarLogo() {
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexShrink: 0 }}>
+      
+      <div style={{ position: 'relative', width: F_W, height: F_H, flexShrink: 0 }}>
+        
+        {/* Tight glow (controlled) */}
+        <motion.img
+          src="/assets/f_logo.png"
+          alt=""
+          width={F_W}
+          height={F_H}
+          style={{
+            position: 'absolute',
+            inset: 0,
+            display: 'block',
+            filter: 'brightness(1.15) contrast(1.15) drop-shadow(0 0 6px rgba(168,85,247,0.6))',
+            pointerEvents: 'none',
+          }}
+          animate={{ opacity: [0.18, 0.26, 0.2, 0.28, 0.19] }}
+          transition={{ duration: 6.2, repeat: Infinity, ease: 'easeInOut' }}
+        />
+
+        {/* Internal glow (subtle) */}
+        <motion.div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            background:
+              'radial-gradient(circle at 45% 35%, rgba(168,85,247,0.42) 0%, transparent 60%)',
+            mixBlendMode: 'screen',
+            pointerEvents: 'none',
+          }}
+          animate={{ opacity: [0.16, 0.28, 0.2, 0.32, 0.18] }}
+          transition={{ duration: 6.8, repeat: Infinity, ease: 'easeInOut' }}
+        />
+
+        {/* Sharp F (important layer) */}
+        <img
+          src="/assets/f_logo.png"
+          alt="FrancAI"
+          width={F_W}
+          height={F_H}
+          style={{
+            position: 'absolute',
+            inset: 0,
+            display: 'block',
+            opacity: 1,
+            filter:
+              'brightness(1.15) contrast(1.15) drop-shadow(0 0 6px rgba(168,85,247,0.6))',
+          }}
+        />
+      </div>
+
+      {/* Text */}
+      <span
+        style={{
+          fontWeight: 700,
+          fontSize: 18,
+          lineHeight: 1,
+          letterSpacing: '-0.01em',
+        }}
+      >
+        <span style={{ color: 'rgba(255,255,255,0.94)' }}>Franc</span>
+        <span style={{ color: '#a855f7' }}>AI</span>
+      </span>
+    </div>
+  )
+}
 
 export function Navbar() {
   const { t, lang, setLang } = useLanguage()
@@ -38,12 +114,9 @@ export function Navbar() {
           <a
             href="#"
             onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
-            className="flex items-center gap-2.5 group flex-shrink-0"
+            className="flex-shrink-0 group outline-none focus:outline-none focus-visible:outline-none"
           >
-            <LogoMark id="nav" className="h-9 w-auto" />
-            <span className="font-display font-extrabold text-[1.1rem] text-white tracking-tight leading-none">
-              FrancAI
-            </span>
+            <NavbarLogo />
           </a>
 
           {/* Desktop nav — centered */}
