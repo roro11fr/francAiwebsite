@@ -32,9 +32,9 @@ export const en = {
     cta2: 'See Case Studies',
     features: [
       'Eliminates manual work',
-      'Reduces operational costs',
-      'Scales automatically',
-      '100% custom-built',
+      'Cuts your operating costs',
+      'Handles more without extra staff',
+      'Built around how you work',
     ],
     stats: [
       { value: '80%', label: 'less repetitive work' },
@@ -331,7 +331,7 @@ export const en = {
   },
   footer: {
     description:
-      'Custom automation systems that reduce manual work, cut costs, and scale with your business.',
+      'Custom AI systems that cut costs, eliminate manual work, and keep your team focused on revenue.',
     links: {
       services: 'Services',
       work: 'Case Studies',

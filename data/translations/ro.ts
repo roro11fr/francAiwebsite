@@ -27,15 +27,15 @@ export const ro: Translations = {
   hero: {
     badge: 'Studio AI & Automatizare',
     headline: 'Nu Mai Plăti Oameni',
-    headlineAccent: 'Pentru Muncă Repetitivă.',
+    headlineAccent: 'Pentru Lucruri Repetitive.',
     subheadline:
       'Automatizăm suportul, programările și procesele interne — ca să reduci costuri și să te concentrezi pe ce aduce bani.',
     cta1: 'Vreau Planul Meu de Automatizare',
     cta2: 'Vezi Exemple',
     features: [
       'Elimini munca manuală',
-      'Reduci costurile operaționale',
-      'Crești fără să angajezi',
+      'Reduci costurile lunar',
+      'Crești fără să angajezi mai mulți oameni',
       '100% construit pentru tine',
     ],
     stats: [
@@ -335,7 +335,7 @@ export const ro: Translations = {
   },
   footer: {
     description:
-      'Sisteme de automatizare personalizate care elimină munca manuală, reduc costurile și cresc odată cu businessul tău.',
+      'Sisteme personalizate care elimină munca manuală, reduc costurile și îți eliberează echipa să se concentreze pe ce aduce bani.',
     links: {
       services: 'Servicii',
       work: 'Studii de Caz',
