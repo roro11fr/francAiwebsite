@@ -7,7 +7,7 @@ export const ro: Translations = {
     process: 'Proces',
     about: 'Despre',
     contact: 'Contact',
-    cta: 'Primește Planul Meu de Automatizare',
+    cta: 'Vreau Planul Meu de Automatizare',
   },
   ui: {
     problem: 'Problemă',
@@ -21,24 +21,21 @@ export const ro: Translations = {
     noObligations: 'Fără obligații, fără presiune',
     navigation: 'Navigare',
     tagline: 'Construiește. Automatizează. Crește.',
-    taglineLine1: 'Construiește. Automatizează.',
-    taglineLine2: 'Crește.',
-    liveBadge: 'Automatizare activă',
     messageLabel: 'Mesaj',
     error: 'Ceva a mers greșit. Te rugăm să încerci din nou.',
   },
   hero: {
     badge: 'Studio AI & Automatizare',
-    headline: 'Nu mai plăti oameni',
-    headlineAccent: 'pentru lucruri repetitive.',
+    headline: 'Nu Mai Plăti Oameni',
+    headlineAccent: 'Pentru Muncă Repetitivă.',
     subheadline:
-      'Automatizăm suportul, programările și procesele interne ca să reduci costuri și să te concentrezi pe ce aduce bani.',
-    cta1: 'Primește Planul Meu de Automatizare',
+      'Automatizăm suportul, programările și procesele interne — ca să reduci costuri și să te concentrezi pe ce aduce bani.',
+    cta1: 'Vreau Planul Meu de Automatizare',
     cta2: 'Vezi Exemple',
     features: [
-      'Scapi de munca repetitivă',
-      'Îți scazi costurile',
-      'Crești fără să angajezi mai mult',
+      'Elimini munca manuală',
+      'Reduci costurile operaționale',
+      'Crești fără să angajezi',
       '100% construit pentru tine',
     ],
     stats: [
@@ -49,30 +46,40 @@ export const ro: Translations = {
   },
   services: {
     label: 'Ce Construim',
-    title: 'Automatizări Care',
-    titleAccent: 'Se Plătesc Singure.',
+    title: 'Șase Sisteme Care',
+    titleAccent: 'Îți Reduc Costurile Manuale.',
     subtitle:
-      'Construite pe cum lucrezi tu — nu soluții generice pe care să le adaptezi.',
+      'Fiecare soluție e construită în jurul proceselor tale — nu instrumente generice la care să te adaptezi.',
     featuredCapabilities: [
-      'Suport Clienți AI',
-      'Automatizare Programări',
-      'Automatizare Procese',
-      'CRM & Lead-uri',
+      'Răspunzi clienților automat — fără așteptare',
+      'Rezervările se fac singure — fără telefoane',
+      'Procesele interne rulează automat — fără muncă manuală',
+      'Lead-urile sunt gestionate instant — fără oportunități pierdute',
+      'Toate instrumentele tale lucrează împreună',
+      'Rapoarte fără să le construiești',
     ],
     items: [
       {
         icon: 'Brain',
         title: 'Asistenți AI pentru Suport Clienți',
         description:
-          'Răspunzi automat clienților, non-stop. Fără timp pierdut, fără om implicat.',
-        badge: 'AI',
+          'Dacă ai nevoie de un sistem care nu există încă, îl construim noi. Asistenți AI, automatizări, instrumente decizionale — proiectate de la zero în jurul proceselor tale exacte.',
+        badge: 'Serviciu Principal',
         featured: true,
+      },
+      {
+        icon: 'Zap',
+        title: 'Oprește Fluxurile Care Ar Trebui să Ruleze Singure',
+        description:
+          'Fiecare sarcină repetitivă a echipei tale e un cost pe care îl plătești în continuare. Identificăm ce îți consumă timp și bani — și automatizăm permanent.',
+        badge: 'Automatizare',
+        featured: false,
       },
       {
         icon: 'Mic',
         title: 'Automatizare Programări',
         description:
-          'Programările se rezervă singure. Fără apeluri inutile, fără implicarea personalului.',
+          'Fiecare apel fără răspuns e o rezervare pierdută. Un agent vocal AI gestionează fiecare apel 24/7 — răspunde la întrebări, verifică disponibilitatea și rezervă programări fără personal implicat.',
         badge: 'Voice',
         featured: false,
       },
@@ -80,45 +87,64 @@ export const ro: Translations = {
         icon: 'Zap',
         title: 'Automatizare Procese Interne',
         description:
-          'Procesele interne rulează automat. Fără muncă manuală, fără erori.',
-        badge: 'Automatizare',
+          'Echipa ta de suport răspunde la aceleași întrebări în buclă. Un chatbot AI le gestionează 80% automat — răspunsuri instant, non-stop, fără angajați suplimentari.',
+        badge: 'AI',
         featured: false,
       },
       {
         icon: 'Code2',
-        title: 'Automatizare CRM și Lead-uri',
+        title: 'Instrumente Construite în Jurul Businessului Tău',
         description:
-          'Lead-urile primesc răspuns imediat. Nicio oportunitate nu se mai pierde.',
-        badge: 'CRM',
+          'Instrumentele generice te forțează să te adaptezi la logica lor. Noi construim în jurul modului tău de lucru — ca să funcționeze exact cum are nevoie echipa ta.',
+        badge: 'App',
+        featured: false,
+      },
+      {
+        icon: 'Globe',
+        title: 'Un Website Care Aduce Clienți, Nu Doar Arată Bine',
+        description:
+          'Rapid, optimizat pentru căutare și construit să transforme vizitatori în clienți. Nu doar o prezență online — un instrument care lucrează pentru businessul tău.',
+        badge: 'Web',
         featured: false,
       },
     ],
   },
   benefits: {
-    label: 'Ce Câștigi Concret',
-    title: 'Costuri Mai Mici.',
-    titleAccent: 'Rezultate Mai Bune.',
-    subtitle: '',
+    label: 'De Ce FrancAI',
+    title: 'De Ce Merită',
+    titleAccent: 'Să Oprești Munca Manuală.',
+    subtitle:
+      'Aceeași muncă făcută mai rapid, mai ieftin și fără erori. Asta câștigi când renunți la procesele manuale.',
     items: [
       {
-        title: 'Plătești mai puțin pentru aceleași rezultate',
+        title: 'Plătești Mai Puțin pentru Același Rezultat',
         description:
-          'Automatizezi ce face echipa ta în mod repetat. Costurile scad fără să scadă calitatea.',
+          'Fiecare sarcină repetitivă e un cost pe care îl poți elimina. Identificăm ce se poate automatiza și construim sistemul care o gestionează — permanent.',
       },
       {
-        title: 'Răspunzi mai repede decât concurența',
+        title: 'Echipa Ta Oprește Munca Inutilă',
         description:
-          'Clienții primesc răspuns instant. Nu mai pierzi lead-uri pentru că ai întârziat.',
+          'Introducere date, emailuri repetitive, copy-paste. Le eliminăm. Timpul echipei tale merge spre muncă care contează cu adevărat.',
       },
       {
-        title: 'Echipa ta nu mai face muncă inutilă',
+        title: 'Clienții Primesc Răspunsuri Instant',
         description:
-          'Lucrurile repetitive se fac singure. Oamenii tăi se ocupă de ce aduce bani.',
+          'Fără așteptare, fără cozi. Clienții tăi primesc ce au nevoie în momentul în care întreabă — fără că echipa ta să ridice un deget.',
       },
       {
-        title: 'Mai mult timp pentru ce contează',
+        title: 'Echipa Ta Se Concentrează pe Ce Aduce Bani',
         description:
-          'Când operațiunile merg automat, echipa ta poate crește businessul.',
+          'Scapi de munca administrativă și echipa ta petrece ziua pe clienți, vânzări și creștere — nu pe sarcini care ar trebui să ruleze singure.',
+      },
+      {
+        title: 'Concurenții Tăi Deja Automatizează',
+        description:
+          'Businessurile care automatizează azi construiesc avantaje care vor defini piața ani întregi. Te ajutăm să ajungi acolo înainte să fie prea târziu.',
+      },
+      {
+        title: 'ROI Măsurat în Bani, Nu în Funcționalități',
+        description:
+          'Ore economite pe săptămână, costuri reduse, venituri care nu mai sunt pierdute din erori manuale. Măsurăm față de ce trebuia rezolvat — nimic altceva.',
       },
     ],
   },
@@ -129,7 +155,7 @@ export const ro: Translations = {
     caseStudiesTitle: 'Studii de Caz: Cum Automatizăm Businessuri Reale',
     tagline: 'Rezultate reale, nu demo-uri.',
     subtitle:
-      'Fiecare proiect a pornit de la o problemă concretă. Fiecare soluție e live, în producție, și livrează rezultate de azi.',
+      'Fiecare proiect a început cu o problemă reală de business. Fiecare soluție e live, în producție, livrând rezultate azi.',
     items: [
       {
         type: 'Bază de Cunoștințe AI',
@@ -137,20 +163,20 @@ export const ro: Translations = {
         problem:
           'Echipa de suport a unui client petrecea 3–4 ore zilnic căutând prin documentație tehnică pentru a răspunde la întrebări de bază.',
         solution:
-          'Am construit un asistent care înțelege limbajul natural, caută prin toată documentația și returnează răspunsuri precise, cu sursa indicată — în câteva secunde.',
+          'Am construit un asistent inteligent care înțelege limbajul natural, caută prin toată documentația instant și returnează răspunsuri precise cu referințe la sursă — în secunde.',
         impact:
-          'Timpii de răspuns au scăzut cu peste 70%. Aceeași echipă gestionează acum de 3× mai multe solicitări, fără angajări sau ore suplimentare.',
+          'Timpul de răspuns al suportului redus cu peste 70%. Aceeași echipă gestionează acum de 3× mai multe solicitări fără angajări suplimentare.',
         tags: ['AI', 'Automatizare', 'Bază de Cunoștințe'],
       },
       {
         type: 'Agent Vocal AI',
         title: 'Recepționist Vocal AI',
         problem:
-          'Un business pierdea rezervări zilnic pentru că personalul nu putea răspunde la toate apelurile în orele de vârf. Fiecare apel ratat însemna venituri pierdute fără nicio șansă de recuperare.',
+          'Un business de servicii pierdea rezervări zilnic pentru că personalul nu putea răspunde la fiecare apel în orele de vârf. Apelurile ratate însemnau venituri pierdute fără nicio modalitate de recuperare.',
         solution:
-          'Am implementat un agent vocal AI care preia fiecare apel 24/7 — răspunde la întrebări despre servicii și disponibilitate și rezervă programări direct în calendar, fără să implice personalul.',
+          'Am implementat un agent vocal AI care gestionează fiecare apel 24/7 — răspunde la întrebări, verifică disponibilitatea și rezervă programări direct în calendar fără nicio implicare a personalului.',
         impact:
-          'Zero apeluri pierdute. 40% din rezervări vin acum în afara orelor de lucru. Personalul se ocupă exclusiv de servicii față în față, fără întreruperi.',
+          'Zero apeluri ratate. 40% din toate rezervările au loc acum în afara orelor de lucru. Personalul se concentrează exclusiv pe servicii față în față.',
         tags: ['Voice AI', 'Automatizare', 'Rezervări'],
       },
       {
@@ -168,22 +194,22 @@ export const ro: Translations = {
         type: 'Platformă de Automatizare AI',
         title: 'Automatizare Intelligence Competitiv',
         problem:
-          'O echipă de marketing petrecea 3–4 săptămâni pe trimestru urmărind manual concurența pe zeci de surse. Era lent, costisitor și mereu depășit.',
+          'O echipă de marketing petrecea 3–4 săptămâni pe trimestru urmărind manual modificările de prețuri și poziționare ale concurenților. Era lent, costisitor și mereu depășit.',
         solution:
-          'Am construit o platformă care monitorizează automat concurența, detectează schimbările și livrează rapoarte săptămânale formatate — fără nicio intervenție umană.',
+          'Am construit o platformă automată care monitorizează continuu concurenții, detectează schimbările și livrează rapoarte formatate săptămânal — fără input uman.',
         impact:
-          'Cercetarea s-a redus de la săptămâni la câteva ore pe trimestru. Echipa primește acum informații actualizate în fiecare săptămână, în loc de un raport manual trimestrial.',
+          'Timpul de cercetare redus de la săptămâni la ore pe trimestru. Factorii de decizie primesc intelligence proaspăt în fiecare săptămână în loc de un raport manual trimestrial.',
         tags: ['AI', 'Automatizare Web', 'Business Intelligence'],
       },
     ],
-    cta: 'Primește Planul Meu de Automatizare',
+    cta: 'Vreau Planul Meu de Automatizare',
   },
   businessTypes: {
     label: 'Pentru Cine Construim',
-    title: 'Soluții Construite Pentru',
+    title: 'Construit pentru',
     titleAccent: 'Industria Ta',
     subtitle:
-      'Personalizat înseamnă exact asta — fiecare sistem e construit pentru businessul tău specific, nu un template generic adaptat să se potrivească.',
+      'Nu un template adaptat. Fiecare sistem e construit în jurul modului în care businessul tău funcționează cu adevărat.',
     items: [
       {
         icon: 'Stethoscope',
@@ -191,7 +217,7 @@ export const ro: Translations = {
         challenge:
           'Apelurile pierdute în orele aglomerate îți costă rezervări și clienți în fiecare zi.',
         solution:
-          'Un recepționist vocal AI preia toate apelurile 24/7 — răspunde la întrebări, verifică disponibilitatea și rezervă programări fără să deranjeze personalul.',
+          'Un recepționist vocal AI gestionează toate apelurile 24/7 — răspunde la întrebări, verifică disponibilitatea și rezervă programări fără nicio implicare a personalului.',
         tag: 'Agent Vocal',
       },
       {
@@ -207,59 +233,61 @@ export const ro: Translations = {
         icon: 'Briefcase',
         industry: 'Agenții & Consultanți',
         challenge:
-          'Ore întregi dispar în raportare manuală, follow-up-uri cu clienții și livrabile repetitive.',
+          'Ore dispar în raportare manuală, follow-up-uri cu clienții și producerea acelorași livrabile din nou și din nou.',
         solution:
-          'Automatizarea gestionează munca repetitivă din spate — rapoarte, follow-up-uri, introducere de date — ca echipa ta să se concentreze pe munca care contează.',
+          'Automatizarea gestionează munca repetitivă de back-office — rapoarte, follow-up-uri, introducere date — ca echipa ta să se concentreze pe munca de valoare ridicată.',
         tag: 'Automatizare Fluxuri',
       },
       {
         icon: 'Building2',
         industry: 'Companii Tech',
         challenge:
-          'Informațiile interne sunt răspândite prin documente, wiki-uri și emailuri — și găsirea răspunsului corect durează ore întregi.',
+          'Cunoașterea internă e împrăștiată în documente, wiki-uri și emailuri — și găsirea răspunsului corect îți ia ore.',
         solution:
-          'Un asistent AI indexează toată documentația internă și găsește răspunsuri precise instant, din orice sursă.',
+          'Un asistent AI personalizat indexează toată documentația internă și găsește răspunsuri precise instant, din orice sursă.',
         tag: 'Bază de Cunoștințe AI (RAG)',
       },
     ],
   },
   process: {
-    label: 'Cum Funcționează',
-    title: 'De la Muncă Manuală',
-    titleAccent: 'la Automatizare',
-    subtitle: '',
+    label: 'Cum Lucrăm',
+    title: 'De la Problemă la',
+    titleAccent: 'Sistem Funcțional',
+    subtitle:
+      'Un proces clar de la problema ta specifică de business la o soluție live — cu vizibilitate deplină la fiecare pas.',
     steps: [
       {
         number: '01',
-        title: 'Vedem cum lucrezi',
+        title: 'Vedem Cum Lucrezi',
         description:
-          'Înțelegem unde pierde echipa ta timp și bani.',
+          'Mapăm businessul tău: unde se pierde timp, ce se face manual, unde curge banii. Fără presupuneri — doar realitatea.',
       },
       {
         number: '02',
-        title: 'Îți arătăm unde pierzi bani',
+        title: 'Îți Arătăm Unde Pierzi Bani',
         description:
-          'Îți spunem exact ce se poate automatiza și cât economisești.',
+          'Identificăm exact ce se poate automatiza și cât te costă azi. Vezi oportunitatea în cifre concrete înainte să construim ceva.',
       },
       {
         number: '03',
-        title: 'Construim automatizarea',
+        title: 'Construim Automatizarea',
         description:
-          'Construit pe cum lucrezi tu. Tu aprobi înainte să începem.',
+          'Construim, testăm și integrăm sistemul cu instrumentele existente. Primești actualizări pe parcurs — fără așteptare, fără surprize.',
       },
       {
         number: '04',
-        title: 'Tu economisești și crești',
-        description: 'Live în producție. Măsurabil din prima zi.',
+        title: 'Economisești Timp și Îți Crești Afacerea',
+        description:
+          'Sistemul intră live și începe să livreze. Monitorizăm performanța și optimizăm până obții rezultatele pentru care a fost construit.',
       },
     ],
   },
   about: {
     label: 'Despre FrancAI',
-    title: 'Construim Ceea Ce',
+    title: 'Construim Ce',
     titleAccent: 'Produce Rezultate Reale.',
-    text: 'FrancAI automatizează lucrurile repetitive din businessul tău, ca să nu mai plătești oameni să facă muncă pe care o poate face un sistem.',
-    text2: 'Fără demo-uri. Fără proof-of-concept-uri. Fiecare proiect pornește de la o problemă concretă și se termină cu ceva funcțional, live, care aduce rezultate.',
+    text: 'FrancAI construiește sisteme de automatizare pentru businessuri care s-au săturat să plătească oameni să facă muncă pe care sistemele ar trebui să o facă.',
+    text2: 'Fără demo-uri. Fără proof-of-concept-uri. Fiecare proiect începe cu o problemă reală și se termină cu un sistem funcțional în producție — măsurabil din prima zi.',
     cta: 'Începe o Conversație',
     values: [
       { title: 'Fără demo-uri', description: 'Sisteme de producție care rulează și livrează rezultate' },
@@ -269,17 +297,18 @@ export const ro: Translations = {
   },
   statement: {
     line1: 'Cele mai multe businessuri nu au o problemă de creștere.',
+    line1: 'Cele mai multe businessuri nu au o problemă de creștere.',
     line2: 'Au o problemă de sisteme.',
   },
   painPoints: {
     label: 'Costul Real',
     items: [
-      { stat: 'Ore plătite', text: 'pierdute săptămânal pe lucruri repetitive.' },
-      { stat: 'Ore zilnic', text: 'pierdute între aplicații care nu comunică.' },
-      { stat: 'Lead-uri pierdute', text: 'pentru că echipa ta răspunde prea târziu.' },
-      { stat: 'Prea multe', text: 'procese simple care cer în continuare intervenție manuală.' },
+      { stat: '3–4h zilnic', text: 'pierdute răspunzând la aceleași întrebări — în fiecare zi, bani pe care îi tot cheltuiești.' },
+      { stat: '1 din 3 apeluri', text: 'rămâne fără răspuns în orele aglomerate. Fiecare e o rezervare sau un client pierdut.' },
+      { stat: 'Ore săptămânal', text: 'arse pe introducere de date între sisteme care ar trebui să se conecteze automat.' },
+      { stat: 'Săptămâni pe trimestru', text: 'construind rapoarte manual — deja depășite până când le citește cineva.' },
     ],
-    close: 'Munca manuală te costă mai mult decât crezi.',
+    close: "Asta costă munca manuală. În fiecare săptămână.",
     cta: 'Vezi Ce Automatizăm',
   },
   contact: {
@@ -298,15 +327,15 @@ export const ro: Translations = {
       success: 'Mesaj trimis! Îți vom răspunde în 24 de ore.',
     },
     cta: {
-      title: 'Preferi să vorbești întâi?',
+      title: 'Vrei să vezi cât pierzi acum?',
       subtitle:
-        'Rezervă un call gratuit de 30 de minute. Îți arătăm ce poți automatiza și cât pierzi acum.',
-      button: 'Primește Planul Meu de Automatizare',
+        'Îți arătăm ce se poate automatiza și cât te costă azi. Fără obligații.',
+      button: 'Vreau Planul Meu de Automatizare',
     },
   },
   footer: {
     description:
-      'Sisteme de automatizare construite pentru businessul tău — mai puțin manual, mai puțin costisitor, mai multă creștere.',
+      'Sisteme de automatizare personalizate care elimină munca manuală, reduc costurile și cresc odată cu businessul tău.',
     links: {
       services: 'Servicii',
       work: 'Studii de Caz',

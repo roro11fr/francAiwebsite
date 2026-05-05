@@ -19,20 +19,17 @@ export const en = {
     noObligations: 'No obligations, no pressure',
     navigation: 'Navigation',
     tagline: 'Build. Automate. Scale.',
-    taglineLine1: 'Build. Automate.',
-    taglineLine2: 'Scale.',
-    liveBadge: 'Automation live',
     messageLabel: 'Message',
     error: 'Something went wrong. Please try again.',
   },
   hero: {
     badge: 'AI & Automation Studio',
     headline: 'Stop Paying People',
-    headlineAccent: "To Do Robots' Work.",
+    headlineAccent: 'For Repetitive Work.',
     subheadline:
-      'FrancAI builds automation systems that reduce manual work, cut costs, and help your team focus on revenue.',
-    cta1: 'Get My Automation Plan',
-    cta2: 'See Examples',
+      'We build custom AI systems that replace repetitive tasks, reduce costs, and help your business scale — without hiring more people.',
+    cta1: 'Show Me What I Can Automate',
+    cta2: 'See Case Studies',
     features: [
       'Eliminates manual work',
       'Reduces operational costs',
@@ -50,12 +47,14 @@ export const en = {
     title: 'Automations That',
     titleAccent: 'Pay for Themselves.',
     subtitle:
-      'Built around your exact workflows — not generic tools you adapt to.',
+      'Every solution is designed around your specific workflows — not generic tools you have to adapt to.',
     featuredCapabilities: [
-      'AI Customer Support',
-      'Booking Automation',
-      'Workflow Automation',
-      'CRM & Lead Handling',
+      'Intelligent Assistants',
+      'Automation Pipelines',
+      'Decision-Support Tools',
+      'Custom Integrations',
+      'AI Knowledge Bases',
+      'Voice & Chat Agents',
     ],
     items: [
       {
@@ -67,10 +66,18 @@ export const en = {
         featured: true,
       },
       {
+        icon: 'Zap',
+        title: 'Stop Running Workflows That Should Run Themselves',
+        description:
+          'Every task your team does on repeat is a system waiting to be built. We map your workflows and automate the ones bleeding your time and headcount.',
+        badge: 'Automation',
+        featured: false,
+      },
+      {
         icon: 'Mic',
         title: 'Booking and Scheduling Automation',
         description:
-          'Every call answered, every appointment booked — without staff involvement.',
+          'Your business loses a booking every time a call goes unanswered. A voice AI agent handles every inbound call 24/7 — answers questions, checks availability, and books appointments without staff.',
         badge: 'Voice',
         featured: false,
       },
@@ -78,45 +85,64 @@ export const en = {
         icon: 'Zap',
         title: 'Internal Workflow Automation',
         description:
-          'Repetitive back-office tasks run on their own. Your team focuses on revenue.',
-        badge: 'Automation',
+          'Your support team is answering the same questions in a loop. An AI chatbot handles 80% of them automatically — instant, consistent, available around the clock.',
+        badge: 'AI',
         featured: false,
       },
       {
         icon: 'Code2',
         title: 'CRM and Lead Handling',
         description:
-          'Leads get instant follow-up. Nothing falls through the cracks.',
-        badge: 'CRM',
+          'Generic SaaS tools force you to adapt your business to their logic. We build the tool around yours — scalable, integrated, and AI-ready from day one.',
+        badge: 'App',
+        featured: false,
+      },
+      {
+        icon: 'Globe',
+        title: 'A Website That Converts, Not Just Looks Good',
+        description:
+          'Fast, search-optimized, and designed to make your business look as serious as it is. Built to convert, not just to exist.',
+        badge: 'Web',
         featured: false,
       },
     ],
   },
   benefits: {
-    label: 'What You Actually Gain',
-    title: 'Lower Costs.',
-    titleAccent: 'More Output.',
-    subtitle: '',
+    label: 'Why FrancAI',
+    title: 'The Business Case',
+    titleAccent: 'For Stopping Manual Work.',
+    subtitle:
+      'The same work done faster, cheaper, and without the errors. Here is what businesses gain when they stop doing things manually.',
     items: [
       {
-        title: 'Lower operational costs',
+        title: 'Stop Paying Staff to Do What Machines Should',
         description:
-          'Automate what your team does on repeat. Same output — smaller cost base.',
+          'Every task your team does repeatedly is a candidate for automation. We identify it, map it, and build a system that handles it — permanently.',
       },
       {
-        title: 'Faster response times',
+        title: 'Same Output. Smaller Headcount.',
         description:
-          'AI systems respond instantly. No delays, no missed leads.',
+          'AI systems handle the volume that would require additional headcount. Same output, significantly lower operational costs — without the management overhead.',
       },
       {
-        title: 'Less repetitive work',
+        title: 'Scale Without Adding Staff',
         description:
-          'Your team focuses on revenue-generating tasks, not manual processing.',
+          'Automated systems grow with your demand. No training costs, no onboarding delays, no capacity limits — just seamless scaling when your business needs it.',
       },
       {
-        title: 'More time for sales',
+        title: 'Built Exactly for Your Business',
         description:
-          'When operations run themselves, your people grow the business.',
+          'Generic tools create generic results. Every system we build is designed specifically for your workflows, your tools, and your business goals — nothing adapted, everything purpose-built.',
+      },
+      {
+        title: 'Your Competitors Are Already Automating',
+        description:
+          'Businesses building AI systems today are creating advantages that will define their market for years. We help you get there before the gap becomes permanent.',
+      },
+      {
+        title: 'ROI Scoped Against Real Business Outcomes',
+        description:
+          'Hours saved per week, costs reduced, revenue no longer lost to manual errors. We measure against what the project was supposed to fix — not features shipped.',
       },
     ],
   },
@@ -178,10 +204,10 @@ export const en = {
   },
   businessTypes: {
     label: 'Who We Build For',
-    title: 'AI Solutions Tailored to',
-    titleAccent: 'Your Industry',
+    title: 'Built for Your',
+    titleAccent: 'Industry',
     subtitle:
-      'Custom means exactly that — every system is built around your specific business, not a generic template adapted to fit.',
+      'Not a template adapted to fit. Every system is built around how your specific business actually works.',
     items: [
       {
         icon: 'Stethoscope',
@@ -197,7 +223,7 @@ export const en = {
         challenge:
           'Your support team spends most of its day answering the same questions about orders, returns, and shipping.',
         solution:
-          'An AI chatbot handles 80% of support requests automatically — available 24/7, instant, consistent. Your team only handles the cases that genuinely need a human.',
+          'An AI chatbot handles 80% of support requests automatically — available 24/7, instant, consistent. Your team only handles cases that genuinely need a human.',
         tag: 'AI Chatbot + Automation',
       },
       {
@@ -221,33 +247,35 @@ export const en = {
     ],
   },
   process: {
-    label: 'How It Works',
-    title: 'From Manual Work',
-    titleAccent: 'to Automation',
-    subtitle: '',
+    label: 'How We Work',
+    title: 'From Problem to',
+    titleAccent: 'Working System',
+    subtitle:
+      'A structured process that moves from your specific business problem to a deployed, live solution — with full visibility at every step.',
     steps: [
       {
         number: '01',
-        title: 'We analyze your workflow',
+        title: 'Discovery',
         description:
-          'We map where your team spends time and where money is being lost.',
+          'We start by mapping your business: where time is lost, what gets done manually, and what a working solution would actually change. No assumptions — just the real picture.',
       },
       {
         number: '02',
-        title: 'We find the gaps',
+        title: 'Solution Design',
         description:
-          'We identify which processes can be automated and what that saves you.',
+          'We design the exact system: what gets automated, how it integrates with your existing tools, and what the output looks like. You approve everything before we build.',
       },
       {
         number: '03',
-        title: 'We build the automation',
+        title: 'Development & Integration',
         description:
-          'Custom systems built for your exact workflows. You approve before we build.',
+          'We build, test, and integrate the system with your existing stack. You get progress updates throughout — no waiting, no black boxes.',
       },
       {
         number: '04',
-        title: 'You save time and scale',
-        description: 'Live in production. Measurable from day one.',
+        title: 'Launch & Optimization',
+        description:
+          'We deploy, monitor, and measure. After launch, we track real performance metrics and optimize until the system is delivering the results it was built for.',
       },
     ],
   },
@@ -271,12 +299,12 @@ export const en = {
   painPoints: {
     label: 'The Real Cost',
     items: [
-      { stat: 'Paid hours', text: 'wasted every week on tasks that should run automatically.' },
-      { stat: 'Hours daily', text: "lost switching between tools that don't talk to each other." },
-      { stat: 'Lost leads', text: 'every time your team is too slow to respond.' },
-      { stat: 'Too many', text: 'simple processes that still depend on a person to trigger them.' },
+      { stat: '3–4h daily', text: 'lost answering the same support questions your team has already answered a hundred times.' },
+      { stat: '1 in 3 calls', text: 'goes unanswered during your busiest hours — each one a booking or client you never get back.' },
+      { stat: 'Hours weekly', text: 'burned moving data between systems that should talk to each other automatically.' },
+      { stat: 'Weeks per quarter', text: 'building reports by hand, already outdated by the time anyone reads them.' },
     ],
-    close: 'Manual work is costing you more than you think.',
+    close: "These aren't edge cases. They're the default — until you automate them.",
     cta: 'See What We Automate',
   },
   contact: {
@@ -295,9 +323,9 @@ export const en = {
       success: "Message sent! We'll get back to you within 24 hours.",
     },
     cta: {
-      title: 'Prefer to talk?',
+      title: 'Prefer to talk first?',
       subtitle:
-        'Book a free 30-minute call. We map your biggest automation opportunity — no obligations.',
+        'Book a free 30-minute discovery call. We map your biggest automation opportunity and outline a tailored solution — no obligations.',
       button: 'Get My Automation Plan',
     },
   },
