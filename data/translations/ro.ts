@@ -7,11 +7,11 @@ export const ro: Translations = {
     process: 'Proces',
     about: 'Despre',
     contact: 'Contact',
-    cta: 'Vreau Planul Meu de Automatizare',
+    cta: 'Programează un call gratuit',
   },
   ui: {
     problem: 'Problemă',
-    solution: 'Ce Am Construit',
+    solution: 'Ce am construit',
     impact: 'Rezultate',
     challenge: 'Provocare',
     seeHowItWorks: 'Vezi cum funcționează →',
@@ -25,31 +25,31 @@ export const ro: Translations = {
     error: 'Ceva a mers greșit. Te rugăm să încerci din nou.',
   },
   hero: {
-    badge: 'Studio AI & Automatizare',
-    headline: 'Nu Mai Plăti Oameni',
-    headlineAccent: 'Pentru Lucruri Repetitive.',
-    subheadline:
-      'Automatizăm suportul, programările și procesele interne — ca să reduci costuri și să te concentrezi pe ce aduce bani.',
-    cta1: 'Vreau Planul Meu de Automatizare',
-    cta2: 'Vezi Exemple',
-    features: [
-      'Elimini munca manuală',
-      'Reduci costurile lunar',
-      'Crești fără să angajezi mai mulți oameni',
-      '100% construit pentru tine',
-    ],
-    stats: [
-      { value: '80%', label: 'mai puțină muncă repetitivă' },
-      { value: '10×', label: 'mai rapid decât dacă ai face manual' },
-      { value: '100%', label: 'construit pentru businessul tău' },
-    ],
-  },
+  badge: 'AI + Automatizare Personalizată',
+  headline: 'Nu mai plăti oameni',
+  headlineAccent: 'pentru lucruri repetitive.',
+  subheadline:
+    'Automatizăm suportul, programările și procesele interne ca să reduci costuri și să nu mai pierzi timp inutil.',
+  cta1: 'Programează un call gratuit',
+  cta2: 'Vezi Exemple',
+  features: [
+    'Mai puțină muncă manuală',
+    'Costuri mai mici',
+    'Mai mult timp pentru vânzări',
+    'Sisteme făcute pentru tine',
+  ],
+  stats: [
+    { value: '80%', label: 'mai puțin timp pierdut' },
+    { value: '10×', label: 'mai rapid decât manual' },
+    { value: '100%', label: 'adaptat businessului tău' },
+  ],
+},
   services: {
-    label: 'Ce Construim',
-    title: 'Șase Sisteme Care',
-    titleAccent: 'Îți Reduc Costurile Manuale.',
-    subtitle:
-      'Fiecare soluție e construită în jurul proceselor tale — nu instrumente generice la care să te adaptezi.',
+   label: 'Ce automatizăm',
+  title: 'Ce putem automatiza',
+  titleAccent: 'pentru tine.',
+  subtitle:
+    'Ne uităm unde pierzi timp și bani, apoi construim sisteme care preiau munca repetitivă.',
     featuredCapabilities: [
       'Răspunzi clienților automat — fără așteptare',
       'Rezervările se fac singure — fără telefoane',
@@ -59,95 +59,77 @@ export const ro: Translations = {
       'Rapoarte fără să le construiești',
     ],
     items: [
-      {
-        icon: 'Brain',
-        title: 'Asistenți AI pentru Suport Clienți',
-        description:
-          'Dacă ai nevoie de un sistem care nu există încă, îl construim noi. Asistenți AI, automatizări, instrumente decizionale — proiectate de la zero în jurul proceselor tale exacte.',
-        badge: 'Serviciu Principal',
-        featured: true,
-      },
-      {
-        icon: 'Zap',
-        title: 'Oprește Fluxurile Care Ar Trebui să Ruleze Singure',
-        description:
-          'Fiecare sarcină repetitivă a echipei tale e un cost pe care îl plătești în continuare. Identificăm ce îți consumă timp și bani — și automatizăm permanent.',
-        badge: 'Automatizare',
-        featured: false,
-      },
-      {
-        icon: 'Mic',
-        title: 'Automatizare Programări',
-        description:
-          'Fiecare apel fără răspuns e o rezervare pierdută. Un agent vocal AI gestionează fiecare apel 24/7 — răspunde la întrebări, verifică disponibilitatea și rezervă programări fără personal implicat.',
-        badge: 'Voice',
-        featured: false,
-      },
-      {
-        icon: 'Zap',
-        title: 'Automatizare Procese Interne',
-        description:
-          'Echipa ta de suport răspunde la aceleași întrebări în buclă. Un chatbot AI le gestionează 80% automat — răspunsuri instant, non-stop, fără angajați suplimentari.',
-        badge: 'AI',
-        featured: false,
-      },
-      {
-        icon: 'Code2',
-        title: 'Instrumente Construite în Jurul Businessului Tău',
-        description:
-          'Instrumentele generice te forțează să te adaptezi la logica lor. Noi construim în jurul modului tău de lucru — ca să funcționeze exact cum are nevoie echipa ta.',
-        badge: 'App',
-        featured: false,
-      },
-      {
-        icon: 'Globe',
-        title: 'Un Website Care Aduce Clienți, Nu Doar Arată Bine',
-        description:
-          'Rapid, optimizat pentru căutare și construit să transforme vizitatori în clienți. Nu doar o prezență online — un instrument care lucrează pentru businessul tău.',
-        badge: 'Web',
-        featured: false,
-      },
-    ],
+  {
+    icon: 'Brain',
+    title: 'Suport Clienți Automat',
+    description:
+      'Răspunzi automat la întrebările repetitive, fără să pierzi timp zilnic.',
+    badge: 'AI',
+    featured: true,
+  },
+  {
+    icon: 'Mic',
+    title: 'Programări Automate',
+    description:
+      'Apelurile și cererile sunt preluate automat, iar programările ajung direct în calendar.',
+    badge: 'Voice',
+    featured: false,
+  },
+  {
+    icon: 'Zap',
+    title: 'Procese Interne Automate',
+    description:
+      'Scapi de taskurile repetitive: introducere date, notificări, follow-up-uri și copy-paste.',
+    badge: 'Automatizare',
+    featured: false,
+  },
+  {
+    icon: 'Code2',
+    title: 'CRM și Lead-uri Automatizate',
+    description:
+      'Lead-urile primesc răspuns rapid, sunt organizate corect și nu se pierd în aglomerație.',
+    badge: 'CRM',
+    featured: false,
+  },
+  {
+    icon: 'Globe',
+    title: 'Website Care Aduce Clienți',
+    description:
+      'Construim pagini clare, rapide și orientate spre conversie, nu doar design frumos.',
+    badge: 'Web',
+    featured: false,
+  },
+],
   },
   benefits: {
-    label: 'De Ce FrancAI',
-    title: 'De Ce Merită',
-    titleAccent: 'Să Oprești Munca Manuală.',
-    subtitle:
-      'Aceeași muncă făcută mai rapid, mai ieftin și fără erori. Asta câștigi când renunți la procesele manuale.',
-    items: [
-      {
-        title: 'Plătești Mai Puțin pentru Același Rezultat',
-        description:
-          'Fiecare sarcină repetitivă e un cost pe care îl poți elimina. Identificăm ce se poate automatiza și construim sistemul care o gestionează — permanent.',
-      },
-      {
-        title: 'Echipa Ta Oprește Munca Inutilă',
-        description:
-          'Introducere date, emailuri repetitive, copy-paste. Le eliminăm. Timpul echipei tale merge spre muncă care contează cu adevărat.',
-      },
-      {
-        title: 'Clienții Primesc Răspunsuri Instant',
-        description:
-          'Fără așteptare, fără cozi. Clienții tăi primesc ce au nevoie în momentul în care întreabă — fără că echipa ta să ridice un deget.',
-      },
-      {
-        title: 'Echipa Ta Se Concentrează pe Ce Aduce Bani',
-        description:
-          'Scapi de munca administrativă și echipa ta petrece ziua pe clienți, vânzări și creștere — nu pe sarcini care ar trebui să ruleze singure.',
-      },
-      {
-        title: 'Concurenții Tăi Deja Automatizează',
-        description:
-          'Businessurile care automatizează azi construiesc avantaje care vor defini piața ani întregi. Te ajutăm să ajungi acolo înainte să fie prea târziu.',
-      },
-      {
-        title: 'ROI Măsurat în Bani, Nu în Funcționalități',
-        description:
-          'Ore economite pe săptămână, costuri reduse, venituri care nu mai sunt pierdute din erori manuale. Măsurăm față de ce trebuia rezolvat — nimic altceva.',
-      },
-    ],
-  },
+  label: 'Ce Câștigi',
+  title: 'Plătești mai puțin.',
+  titleAccent: 'Obții mai mult.',
+  subtitle:
+    'Scopul nu este să ai mai multe tool-uri. Scopul este să pierzi mai puțin timp și mai puțini bani.',
+  items: [
+    {
+      title: 'Plătești mai puțin pentru același rezultat.',
+      description:
+        'Taskurile repetitive nu mai consumă ore plătite în fiecare zi.',
+    },
+    {
+      title: 'Echipa ta nu mai pierde timp inutil',
+      description:
+        'Echipa ta nu mai pierde timp pe copy-paste, emailuri repetitive și introducere date.',
+    },
+    {
+      title: 'Clienții primesc răspuns instant',
+      description:
+        'Clienții primesc răspuns imediat, fără să aștepte după cineva din echipă.',
+    },
+    {
+      title: 'Te concentrezi pe ce aduce bani',
+      description:
+        'Oamenii tăi se ocupă de clienți, vânzări și creștere, nu de taskuri manuale.',
+    },
+  ],
+},
   projects: {
     label: 'Studii de Caz',
     title: 'Cum Automatizăm',
@@ -202,7 +184,7 @@ export const ro: Translations = {
         tags: ['AI', 'Automatizare Web', 'Business Intelligence'],
       },
     ],
-    cta: 'Vreau Planul Meu de Automatizare',
+    cta: 'Programează un call gratuit',
   },
   businessTypes: {
     label: 'Pentru Cine Construim',
@@ -249,42 +231,42 @@ export const ro: Translations = {
       },
     ],
   },
-  process: {
-    label: 'Cum Lucrăm',
-    title: 'De la Problemă la',
-    titleAccent: 'Sistem Funcțional',
-    subtitle:
-      'Un proces clar de la problema ta specifică de business la o soluție live — cu vizibilitate deplină la fiecare pas.',
-    steps: [
-      {
-        number: '01',
-        title: 'Vedem Cum Lucrezi',
-        description:
-          'Mapăm businessul tău: unde se pierde timp, ce se face manual, unde curge banii. Fără presupuneri — doar realitatea.',
-      },
-      {
-        number: '02',
-        title: 'Îți Arătăm Unde Pierzi Bani',
-        description:
-          'Identificăm exact ce se poate automatiza și cât te costă azi. Vezi oportunitatea în cifre concrete înainte să construim ceva.',
-      },
-      {
-        number: '03',
-        title: 'Construim Automatizarea',
-        description:
-          'Construim, testăm și integrăm sistemul cu instrumentele existente. Primești actualizări pe parcurs — fără așteptare, fără surprize.',
-      },
-      {
-        number: '04',
-        title: 'Economisești Timp și Îți Crești Afacerea',
-        description:
-          'Sistemul intră live și începe să livreze. Monitorizăm performanța și optimizăm până obții rezultatele pentru care a fost construit.',
-      },
-    ],
-  },
+ process: {
+  label: 'Cum Lucrăm',
+  title: 'De la muncă manuală',
+  titleAccent: 'la sistem automat.',
+  subtitle:
+    'Un proces simplu: vedem unde pierzi timp, construim soluția și măsurăm rezultatul.',
+  steps: [
+    {
+      number: '01',
+      title: 'Vedem cum lucrezi',
+      description:
+        'Identificăm unde pierzi timp, bani și energie pe muncă manuală.',
+    },
+    {
+      number: '02',
+      title: 'Îți arătăm clar ce merită automatizat',
+      description:
+        'Primești o imagine clară: ce se poate automatiza și ce impact poate avea.',
+    },
+    {
+      number: '03',
+      title: 'Construim sistemul pentru tine',
+      description:
+        'Facem sistemul pe procesul tău, îl testăm și îl integrăm cu tool-urile existente.',
+    },
+    {
+      number: '04',
+      title: 'Începi să economisești din prima zi',
+      description:
+        'Sistemul rulează, iar echipa ta scapă de munca repetitivă.',
+    },
+  ],
+},
   about: {
     label: 'Despre FrancAI',
-    title: 'Construim Ce',
+    title: 'Construim ce',
     titleAccent: 'Produce Rezultate Reale.',
     text: 'FrancAI construiește sisteme de automatizare pentru businessuri care s-au săturat să plătească oameni să facă muncă pe care sistemele ar trebui să o facă.',
     text2: 'Fără demo-uri. Fără proof-of-concept-uri. Fiecare proiect începe cu o problemă reală și se termină cu un sistem funcțional în producție — măsurabil din prima zi.',
@@ -297,42 +279,54 @@ export const ro: Translations = {
   },
   statement: {
     line1: 'Cele mai multe businessuri nu au o problemă de creștere.',
-    line1: 'Cele mai multe businessuri nu au o problemă de creștere.',
     line2: 'Au o problemă de sisteme.',
   },
   painPoints: {
-    label: 'Costul Real',
-    items: [
-      { stat: '3–4h zilnic', text: 'pierdute răspunzând la aceleași întrebări — în fiecare zi, bani pe care îi tot cheltuiești.' },
-      { stat: '1 din 3 apeluri', text: 'rămâne fără răspuns în orele aglomerate. Fiecare e o rezervare sau un client pierdut.' },
-      { stat: 'Ore săptămânal', text: 'arse pe introducere de date între sisteme care ar trebui să se conecteze automat.' },
-      { stat: 'Săptămâni pe trimestru', text: 'construind rapoarte manual — deja depășite până când le citește cineva.' },
-    ],
-    close: "Asta costă munca manuală. În fiecare săptămână.",
-    cta: 'Vezi Ce Automatizăm',
-  },
+  label: 'Costul Real',
+  items: [
+    {
+      stat: '3–4h zilnic',
+      text: 'pierdute pe aceleași întrebări, mesaje și taskuri repetitive.',
+    },
+    {
+      stat: 'Apeluri pierdute',
+      text: 'înseamnă clienți pierduți în orele aglomerate.',
+    },
+    {
+      stat: 'Ore săptămânal',
+      text: 'pierdute între aplicații care nu comunică între ele.',
+    },
+    {
+      stat: 'Procese simple',
+      text: 'care încă trebuie pornite manual.',
+    },
+  ],
+  close: 'Asta te costă munca manuală în fiecare săptămână.',
+  cta: 'Vezi ce putem automatiza',
+},
   contact: {
-    label: 'Contactează-ne',
-    title: 'Vrei să vezi',
-    titleAccent: 'cât pierzi acum?',
-    subtitle:
-      'Îți arătăm ce poți automatiza și cât te costă în prezent.',
-    form: {
-      name: 'Nume Complet',
-      email: 'Adresă de Email',
-      company: 'Companie (opțional)',
-      message: 'Ce consumă cel mai mult timp echipei tale acum?',
-      submit: 'Primește Planul Meu de Automatizare',
-      submitting: 'Se trimite...',
-      success: 'Mesaj trimis! Îți vom răspunde în 24 de ore.',
-    },
-    cta: {
-      title: 'Vrei să vezi cât pierzi acum?',
-      subtitle:
-        'Îți arătăm ce se poate automatiza și cât te costă azi. Fără obligații.',
-      button: 'Vreau Planul Meu de Automatizare',
-    },
+  label: 'Contactează-ne',
+  title: 'Hai să vedem',
+  titleAccent: 'ce poți automatiza.',
+  subtitle:
+    'Programează un call de 20–30 min. Discutăm cum lucrezi acum și unde se pierde timp.',
+  form: {
+    name: 'Nume complet',
+    email: 'Adresă de email',
+    company: 'Companie (opțional)',
+    message: 'Ce face echipa ta manual și consumă cel mai mult timp?',
+    submit: 'Programează un call gratuit',
+    submitting: 'Se trimite...',
+    success:
+      'Mesaj trimis! Te contactăm în 24 de ore pentru a programa call-ul.',
   },
+  cta: {
+    title: 'Programează un call gratuit',
+    subtitle:
+      'Discutăm 20–30 min despre procesele tale și vedem ce merită automatizat. Fără obligații.',
+    button: 'Programează un call gratuit',
+  },
+},
   footer: {
     description:
       'Sisteme personalizate care elimină munca manuală, reduc costurile și îți eliberează echipa să se concentreze pe ce aduce bani.',

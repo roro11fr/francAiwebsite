@@ -49,114 +49,6 @@ function FLogoGlow() {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Badges
-// ─────────────────────────────────────────────────────────────────────────────
-function AutomationLiveBadge({ label }: { label: string }) {
-  return (
-    <div
-      style={{
-        display: "inline-flex",
-        alignItems: "center",
-        gap: 7,
-        padding: "8px 14px",
-        background: "rgba(10,6,22,0.72)",
-        border: "1px solid rgba(139,92,246,0.26)",
-        borderRadius: 999,
-        backdropFilter: "blur(12px)",
-        WebkitBackdropFilter: "blur(12px)",
-      }}
-    >
-      <span
-        style={{
-          width: 7,
-          height: 7,
-          borderRadius: "50%",
-          background: "#a855f7",
-          boxShadow: "0 0 8px #a855f7",
-          flexShrink: 0,
-        }}
-      />
-      <span
-        style={{
-          fontSize: 11,
-          fontWeight: 500,
-          color: "rgba(255,255,255,0.82)",
-          letterSpacing: "0.04em",
-          whiteSpace: "nowrap",
-        }}
-      >
-        {label}
-      </span>
-    </div>
-  );
-}
-
-function BuildBadge({ line1, line2 }: { line1: string; line2: string }) {
-  return (
-    <motion.div
-      style={{
-        display: "inline-flex",
-        alignItems: "center",
-        gap: 10,
-        padding: "9px 14px",
-        background: "rgba(10,6,22,0.76)",
-        border: "1px solid rgba(109,40,217,0.22)",
-        borderRadius: 12,
-        backdropFilter: "blur(12px)",
-        WebkitBackdropFilter: "blur(12px)",
-      }}
-    >
-      <div
-        style={{
-          width: 30,
-          height: 30,
-          borderRadius: 8,
-          flexShrink: 0,
-          background: "linear-gradient(140deg, #5b21b6, #7c3aed)",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <svg width="15" height="12" viewBox="0 0 15 12" fill="none">
-          <path
-            d="M1 9 Q3 5 5 7.5 Q7 10 9 5 Q11 0 13 3.5"
-            stroke="white"
-            strokeWidth="1.6"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </div>
-      <div>
-        <div
-          style={{
-            fontSize: 11,
-            fontWeight: 600,
-            color: "rgba(255,255,255,0.88)",
-            letterSpacing: "0.03em",
-            lineHeight: 1.3,
-          }}
-        >
-          {line1}
-        </div>
-        <div
-          style={{
-            fontSize: 10,
-            color: "rgba(167,139,250,0.55)",
-            marginTop: 1,
-            letterSpacing: "0.04em",
-          }}
-        >
-          {line2}
-        </div>
-      </div>
-    </motion.div>
-  );
-}
-
-// ─────────────────────────────────────────────────────────────────────────────
 // Hero
 // ─────────────────────────────────────────────────────────────────────────────
 export function HeroCinematic() {
@@ -166,12 +58,12 @@ export function HeroCinematic() {
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       <link
-        href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap"
         rel="stylesheet"
       />
 
       <section
-        className="relative w-full overflow-hidden"
+        className="relative w-full overflow-hidden pt-16"
         style={{
           background: "#05050f",
           fontFamily: "'DM Sans', sans-serif",
@@ -215,12 +107,12 @@ export function HeroCinematic() {
                      grid grid-cols-1 lg:grid-cols-2 items-stretch"
         >
           {/* LEFT */}
-          <div className="flex flex-col justify-center py-10 lg:py-14 pr-0 lg:pr-10">
+          <div className="flex flex-col justify-center py-6 lg:py-8 pr-0 lg:pr-10">
             <motion.div
               initial={{ opacity: 0, y: -8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="flex items-center gap-2 mb-8"
+              className="flex items-center gap-2 mb-5"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse" />
               <span className="text-[11px] text-violet-300/60 uppercase tracking-[0.22em] font-medium">
@@ -236,12 +128,12 @@ export function HeroCinematic() {
                 delay: 0.18,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="text-white leading-[1.05] mb-6"
+              className="text-white leading-[1.0] mb-5"
               style={{
-                fontFamily: "'Syne', sans-serif",
-                fontSize: "clamp(2.6rem, 5vw, 4.2rem)",
+                fontFamily: "'Manrope', sans-serif",
+                fontSize: "clamp(2.2rem, 3.8vw, 3.4rem)",
                 fontWeight: 800,
-                letterSpacing: "-0.03em",
+                letterSpacing: "-0.04em",
               }}
             >
               {t.hero.headline}
@@ -262,7 +154,7 @@ export function HeroCinematic() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.35 }}
-              className="text-violet-200/45 text-base md:text-lg leading-relaxed max-w-md mb-10"
+              className="text-violet-200/45 text-base md:text-lg leading-relaxed max-w-md mb-7"
             >
               {t.hero.subheadline}
             </motion.p>
@@ -271,7 +163,7 @@ export function HeroCinematic() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="flex flex-wrap gap-3 mb-14"
+              className="flex flex-wrap gap-3 mb-8"
             >
               <a
                 href="#contact"
@@ -407,38 +299,6 @@ export function HeroCinematic() {
               <div style={{ position: "absolute", top: 0, right: 0, bottom: 0, width: "32%", background: "linear-gradient(to left, #05050f 0%, transparent 100%)", zIndex: 5, pointerEvents: "none" }} />
               <FLogoGlow />
             </div>
-
-            {/* "Automation live" badge */}
-            <motion.div
-              style={{
-                position: "absolute",
-                top: 80,
-                right: 48,
-                zIndex: 8,
-                pointerEvents: "none",
-              }}
-              initial={{ opacity: 0, y: -8 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.9 }}
-            >
-              <AutomationLiveBadge label={t.ui.liveBadge} />
-            </motion.div>
-
-            {/* "Build. Automate. Scale." badge */}
-            <motion.div
-              style={{
-                position: "absolute",
-                bottom: 80,
-                left: 48,
-                zIndex: 8,
-                pointerEvents: "none",
-              }}
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 1.1 }}
-            >
-              <BuildBadge line1={t.ui.taglineLine1} line2={t.ui.taglineLine2} />
-            </motion.div>
 
             {/* ground glow */}
             <div
