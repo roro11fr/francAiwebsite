@@ -93,9 +93,7 @@ export function Navbar() {
 
   const links = [
     { label: t.nav.services, href: '#services' },
-    { label: t.nav.work, href: '#projects' },
     { label: t.nav.process, href: '#process' },
-    { label: t.nav.about, href: '#about' },
   ]
 
   const handleNav = (href: string) => {

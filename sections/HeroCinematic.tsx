@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLanguage } from "@/context/LanguageContext";
 
 const LOGO_W = 102;
 
@@ -16,121 +17,33 @@ function FLogoGlow() {
         zIndex: 10,
       }}
     >
+      {/* breathing glow — only animated element */}
       <motion.div
         style={{
           position: "absolute",
-          inset: -42,
+          inset: -28,
+          borderRadius: "50%",
           background:
-            "radial-gradient(ellipse 60% 62% at 50% 45%, rgba(139,92,246,0.34) 0%, rgba(109,40,217,0.16) 34%, transparent 72%)",
-          filter: "blur(26px)",
+            "radial-gradient(circle, rgba(139,92,246,0.28) 0%, rgba(109,40,217,0.10) 45%, transparent 72%)",
+          filter: "blur(18px)",
           mixBlendMode: "screen",
         }}
-        animate={{
-          opacity: [0.14, 0.24, 0.18, 0.28, 0.16],
-        }}
-        transition={{
-          duration: 6.4,
-          repeat: Infinity,
-          ease: "easeInOut",
+        animate={{ opacity: [0.18, 0.36, 0.18] }}
+        transition={{ duration: 3.8, repeat: Infinity, ease: "easeInOut" }}
+      />
+      {/* static logo mark blended into hoodie fabric */}
+      <img
+        src="/assets/new_logo_clean.png"
+        alt=""
+        width={LOGO_W}
+        draggable={false}
+        style={{
+          display: "block",
+          mixBlendMode: "screen",
+          opacity: 0.88,
+          filter: "brightness(1.05) drop-shadow(0 0 6px rgba(168,85,247,0.45))",
         }}
       />
-
-      <div
-        style={{
-          position: "relative",
-          width: LOGO_W,
-          height: LOGO_W,
-        }}
-      >
-        <motion.img
-          src="/assets/new_logo_clean.png"
-          alt=""
-          width={LOGO_W}
-          style={{
-            position: "absolute",
-            inset: 0,
-            display: "block",
-            filter: "blur(8px) saturate(2.5) brightness(1.9)",
-            mixBlendMode: "screen",
-          }}
-          animate={{
-            opacity: [0.18, 0.32, 0.22, 0.36, 0.2],
-          }}
-          transition={{
-            duration: 6,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-
-        <motion.img
-          src="/assets/new_logo_clean.png"
-          alt=""
-          width={LOGO_W}
-          style={{
-            position: "absolute",
-            inset: 0,
-            display: "block",
-            filter:
-              "brightness(1.1) contrast(1.08) blur(0.15px) drop-shadow(0 0 10px rgba(168,85,247,0.8))",
-            mixBlendMode: "screen",
-          }}
-          animate={{
-            opacity: [0.2, 0.34, 0.26, 0.38, 0.23],
-          }}
-          transition={{
-            duration: 5.2,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-
-        <motion.div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background:
-              "radial-gradient(circle at 42% 30%, rgba(168,85,247,0.75) 0%, rgba(139,92,246,0.28) 28%, transparent 60%)",
-            mixBlendMode: "screen",
-            pointerEvents: "none",
-          }}
-          animate={{
-            opacity: [0.18, 0.46, 0.26, 0.55, 0.22],
-          }}
-          transition={{
-            duration: 5.6,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-
-        <img
-          src="/assets/new_logo_clean.png"
-          alt=""
-          width={LOGO_W}
-          style={{
-            position: "absolute",
-            inset: 0,
-            display: "block",
-            opacity: 0.94,
-            mixBlendMode: "screen",
-            filter:
-              "brightness(1.08) contrast(1.06) blur(0.18px) drop-shadow(0 0 7px rgba(168,85,247,0.65))",
-          }}
-        />
-
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background:
-              "linear-gradient(135deg, rgba(255,255,255,0.025), rgba(0,0,0,0.06))",
-            mixBlendMode: "overlay",
-            pointerEvents: "none",
-            opacity: 0.5,
-          }}
-        />
-      </div>
     </div>
   );
 }
@@ -138,7 +51,7 @@ function FLogoGlow() {
 // ─────────────────────────────────────────────────────────────────────────────
 // Badges
 // ─────────────────────────────────────────────────────────────────────────────
-function AutomationLiveBadge() {
+function AutomationLiveBadge({ label }: { label: string }) {
   return (
     <div
       style={{
@@ -172,13 +85,13 @@ function AutomationLiveBadge() {
           whiteSpace: "nowrap",
         }}
       >
-        Automation live
+        {label}
       </span>
     </div>
   );
 }
 
-function BuildBadge() {
+function BuildBadge({ line1, line2 }: { line1: string; line2: string }) {
   return (
     <motion.div
       style={{
@@ -226,7 +139,7 @@ function BuildBadge() {
             lineHeight: 1.3,
           }}
         >
-          Build. Automate.
+          {line1}
         </div>
         <div
           style={{
@@ -236,7 +149,7 @@ function BuildBadge() {
             letterSpacing: "0.04em",
           }}
         >
-          Scale.
+          {line2}
         </div>
       </div>
     </motion.div>
@@ -247,6 +160,7 @@ function BuildBadge() {
 // Hero
 // ─────────────────────────────────────────────────────────────────────────────
 export function HeroCinematic() {
+  const { t } = useLanguage()
   return (
     <>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -310,7 +224,7 @@ export function HeroCinematic() {
             >
               <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse" />
               <span className="text-[11px] text-violet-300/60 uppercase tracking-[0.22em] font-medium">
-                AI Automation Studio
+                {t.hero.badge}
               </span>
             </motion.div>
 
@@ -330,7 +244,7 @@ export function HeroCinematic() {
                 letterSpacing: "-0.03em",
               }}
             >
-              Stop paying people
+              {t.hero.headline}
               <br />
               <span
                 style={{
@@ -340,10 +254,8 @@ export function HeroCinematic() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                to do work
+                {t.hero.headlineAccent}
               </span>
-              <br />
-              machines can handle.
             </motion.h1>
 
             <motion.p
@@ -352,8 +264,7 @@ export function HeroCinematic() {
               transition={{ duration: 0.7, delay: 0.35 }}
               className="text-violet-200/45 text-base md:text-lg leading-relaxed max-w-md mb-10"
             >
-              FrancAI builds custom AI systems that eliminate repetitive workflows,
-              cut overhead, and let your team focus on what actually moves the needle.
+              {t.hero.subheadline}
             </motion.p>
 
             <motion.div
@@ -370,7 +281,7 @@ export function HeroCinematic() {
                   boxShadow: "0 0 28px rgba(124,58,237,0.40)",
                 }}
               >
-                <span className="relative z-10">Build with us</span>
+                <span className="relative z-10">{t.hero.cta1}</span>
                 <svg
                   className="relative z-10 w-4 h-4 group-hover:translate-x-1 transition-transform"
                   fill="none"
@@ -388,10 +299,10 @@ export function HeroCinematic() {
               </a>
 
               <a
-                href="#projects"
+                href="#services"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold text-violet-300 border border-violet-700/50 hover:border-violet-500 hover:text-white hover:bg-violet-500/10 transition-all duration-200"
               >
-                See our work
+                {t.hero.cta2}
               </a>
             </motion.div>
 
@@ -402,9 +313,9 @@ export function HeroCinematic() {
               className="flex items-start gap-10 pt-8 border-t border-white/[0.07]"
             >
               {[
-                { v: "80%", l: "Less repetitive work", d: 0.72 },
-                { v: "10×", l: "Faster than manually", d: 0.82 },
-                { v: "100%", l: "Custom-built systems", d: 0.92 },
+                { v: t.hero.stats[0].value, l: t.hero.stats[0].label, d: 0.72 },
+                { v: t.hero.stats[1].value, l: t.hero.stats[1].label, d: 0.82 },
+                { v: t.hero.stats[2].value, l: t.hero.stats[2].label, d: 0.92 },
               ].map(({ v, l, d }) => (
                 <motion.div
                   key={v}
@@ -510,7 +421,7 @@ export function HeroCinematic() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.9 }}
             >
-              <AutomationLiveBadge />
+              <AutomationLiveBadge label={t.ui.liveBadge} />
             </motion.div>
 
             {/* "Build. Automate. Scale." badge */}
@@ -526,7 +437,7 @@ export function HeroCinematic() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1.1 }}
             >
-              <BuildBadge />
+              <BuildBadge line1={t.ui.taglineLine1} line2={t.ui.taglineLine2} />
             </motion.div>
 
             {/* ground glow */}
@@ -588,7 +499,7 @@ export function HeroCinematic() {
               textTransform: "uppercase",
             }}
           >
-            FrancAI — Build. Automate. Scale.
+            FrancAI — {t.ui.tagline}
           </p>
           <div className="flex gap-5">
             {["LinkedIn", "Twitter", "Email"].map((l) => (

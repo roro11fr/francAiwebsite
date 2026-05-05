@@ -9,9 +9,7 @@ export function Footer() {
 
   const links = [
     { label: t.footer.links.services, href: '#services' },
-    { label: t.footer.links.work, href: '#projects' },
     { label: t.footer.links.process, href: '#process' },
-    { label: t.footer.links.about, href: '#about' },
     { label: t.footer.links.contact, href: '#contact' },
   ]
 

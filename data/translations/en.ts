@@ -19,6 +19,9 @@ export const en = {
     noObligations: 'No obligations, no pressure',
     navigation: 'Navigation',
     tagline: 'Build. Automate. Scale.',
+    taglineLine1: 'Build. Automate.',
+    taglineLine2: 'Scale.',
+    liveBadge: 'Automation live',
     messageLabel: 'Message',
     error: 'Something went wrong. Please try again.',
   },
@@ -27,9 +30,9 @@ export const en = {
     headline: 'Stop Paying People',
     headlineAccent: "To Do Robots' Work.",
     subheadline:
-      'We build custom AI systems that replace repetitive tasks, reduce costs, and help your business scale — without hiring more people.',
-    cta1: 'Show Me What I Can Automate',
-    cta2: 'See Case Studies',
+      'FrancAI builds automation systems that reduce manual work, cut costs, and help your team focus on revenue.',
+    cta1: 'Get My Automation Plan',
+    cta2: 'See Examples',
     features: [
       'Eliminates manual work',
       'Reduces operational costs',
@@ -37,112 +40,83 @@ export const en = {
       '100% custom-built',
     ],
     stats: [
-      { value: '80%', label: 'less time spent on repetitive tasks' },
+      { value: '80%', label: 'less repetitive work' },
       { value: '10×', label: 'faster than doing it manually' },
-      { value: '100%', label: 'built from scratch, no templates' },
+      { value: '100%', label: 'custom-built for your business' },
     ],
   },
   services: {
     label: 'What We Build',
-    title: 'Six Systems That',
-    titleAccent: 'Cut Your Manual Overhead.',
+    title: 'Automations That',
+    titleAccent: 'Pay for Themselves.',
     subtitle:
-      'Every solution is designed around your specific workflows — not generic tools you have to adapt to.',
+      'Built around your exact workflows — not generic tools you adapt to.',
     featuredCapabilities: [
-      'Intelligent Assistants',
-      'Automation Pipelines',
-      'Decision-Support Tools',
-      'Custom Integrations',
-      'AI Knowledge Bases',
-      'Voice & Chat Agents',
+      'AI Customer Support',
+      'Booking Automation',
+      'Workflow Automation',
+      'CRM & Lead Handling',
     ],
     items: [
       {
         icon: 'Brain',
-        title: "Build Any System You Can't Find Off the Shelf",
+        title: 'AI Assistants for Customer Support',
         description:
-          "If you need a system that doesn't exist yet, we build it. AI assistants, automation pipelines, decision tools — designed from scratch around your exact processes.",
-        badge: 'Core Service',
+          'Handle repeat questions automatically, 24/7. Your team only handles what actually needs a human.',
+        badge: 'AI',
         featured: true,
       },
       {
-        icon: 'Zap',
-        title: 'Stop Running Workflows That Should Run Themselves',
-        description:
-          'Every task your team does on repeat is a system waiting to be built. We map your workflows and automate the ones bleeding your time and headcount.',
-        badge: 'Automation',
-        featured: false,
-      },
-      {
         icon: 'Mic',
-        title: 'Answer Every Call. Book Every Appointment. No Staff.',
+        title: 'Booking and Scheduling Automation',
         description:
-          'Your business loses a booking every time a call goes unanswered. A voice AI agent handles every inbound call 24/7 — answers questions, checks availability, and books appointments without staff.',
+          'Every call answered, every appointment booked — without staff involvement.',
         badge: 'Voice',
         featured: false,
       },
       {
-        icon: 'MessageSquare',
-        title: 'Handle 80% of Support Without a Human',
+        icon: 'Zap',
+        title: 'Internal Workflow Automation',
         description:
-          'Your support team is answering the same questions in a loop. An AI chatbot handles 80% of them automatically — instant, consistent, available around the clock.',
-        badge: 'AI',
+          'Repetitive back-office tasks run on their own. Your team focuses on revenue.',
+        badge: 'Automation',
         featured: false,
       },
       {
         icon: 'Code2',
-        title: 'Custom Tools Built Around Your Business Logic',
+        title: 'CRM and Lead Handling',
         description:
-          'Generic SaaS tools force you to adapt your business to their logic. We build the tool around yours — scalable, integrated, and AI-ready from day one.',
-        badge: 'App',
-        featured: false,
-      },
-      {
-        icon: 'Globe',
-        title: 'A Website That Converts, Not Just Looks Good',
-        description:
-          'Fast, search-optimized, and designed to make your business look as serious as it is. Built to convert, not just to exist.',
-        badge: 'Web',
+          'Leads get instant follow-up. Nothing falls through the cracks.',
+        badge: 'CRM',
         featured: false,
       },
     ],
   },
   benefits: {
-    label: 'Why FrancAI',
-    title: 'The Business Case',
-    titleAccent: 'For Stopping Manual Work.',
-    subtitle:
-      'The same work done faster, cheaper, and without the errors. Here is what businesses gain when they stop doing things manually.',
+    label: 'What You Actually Gain',
+    title: 'Lower Costs.',
+    titleAccent: 'More Output.',
+    subtitle: '',
     items: [
       {
-        title: 'Stop Paying Staff to Do What Machines Should',
+        title: 'Lower operational costs',
         description:
-          'Every task your team does repeatedly is a candidate for automation. We identify it, map it, and build a system that handles it — permanently.',
+          'Automate what your team does on repeat. Same output — smaller cost base.',
       },
       {
-        title: 'Same Output. Smaller Headcount.',
+        title: 'Faster response times',
         description:
-          'AI systems handle the volume that would require additional headcount. Same output, significantly lower operational costs — without the management overhead.',
+          'AI systems respond instantly. No delays, no missed leads.',
       },
       {
-        title: 'Scale Without Adding Staff',
+        title: 'Less repetitive work',
         description:
-          'Automated systems grow with your demand. No training costs, no onboarding delays, no capacity limits — just seamless scaling when your business needs it.',
+          'Your team focuses on revenue-generating tasks, not manual processing.',
       },
       {
-        title: 'Built Exactly for Your Business',
+        title: 'More time for sales',
         description:
-          'Generic tools create generic results. Every system we build is designed specifically for your workflows, your tools, and your business goals — nothing adapted, everything purpose-built.',
-      },
-      {
-        title: 'Your Competitors Are Already Automating',
-        description:
-          'Businesses building AI systems today are creating advantages that will define their market for years. We help you get there before the gap becomes permanent.',
-      },
-      {
-        title: 'ROI Scoped Against Real Business Outcomes',
-        description:
-          'Hours saved per week, costs reduced, revenue no longer lost to manual errors. We measure against what the project was supposed to fix — not features shipped.',
+          'When operations run themselves, your people grow the business.',
       },
     ],
   },
@@ -200,7 +174,7 @@ export const en = {
         tags: ['AI', 'Web Automation', 'Business Intelligence'],
       },
     ],
-    cta: 'Show Me What I Can Automate',
+    cta: 'Get My Automation Plan',
   },
   businessTypes: {
     label: 'Who We Build For',
@@ -247,35 +221,33 @@ export const en = {
     ],
   },
   process: {
-    label: 'How We Work',
-    title: 'From Problem to',
-    titleAccent: 'Working System',
-    subtitle:
-      'A structured process that moves from your specific business problem to a deployed, live solution — with full visibility at every step.',
+    label: 'How It Works',
+    title: 'From Manual Work',
+    titleAccent: 'to Automation',
+    subtitle: '',
     steps: [
       {
         number: '01',
-        title: 'Discovery',
+        title: 'We analyze your workflow',
         description:
-          'We start by mapping your business: where time is lost, what gets done manually, and what a working solution would actually change. No assumptions — just the real picture.',
+          'We map where your team spends time and where money is being lost.',
       },
       {
         number: '02',
-        title: 'Solution Design',
+        title: 'We find the gaps',
         description:
-          'We design the exact system: what gets automated, how it integrates with your existing tools, and what the output looks like. You approve everything before we build.',
+          'We identify which processes can be automated and what that saves you.',
       },
       {
         number: '03',
-        title: 'Development & Integration',
+        title: 'We build the automation',
         description:
-          'We build, test, and integrate the system with your existing stack. You get progress updates throughout — no waiting, no black boxes.',
+          'Custom systems built for your exact workflows. You approve before we build.',
       },
       {
         number: '04',
-        title: 'Launch & Optimization',
-        description:
-          'We deploy, monitor, and measure. After launch, we track real performance metrics and optimize until the system is delivering the results it was built for.',
+        title: 'You save time and scale',
+        description: 'Live in production. Measurable from day one.',
       },
     ],
   },
@@ -297,41 +269,41 @@ export const en = {
     line2: 'They have a systems problem.',
   },
   painPoints: {
-    label: 'Sound Familiar?',
+    label: 'The Real Cost',
     items: [
-      { stat: '3–4h daily', text: 'lost answering the same support questions your team has already answered a hundred times.' },
-      { stat: '1 in 3 calls', text: 'goes unanswered during your busiest hours — each one a booking or client you never get back.' },
-      { stat: 'Hours weekly', text: 'burned moving data between systems that should talk to each other automatically.' },
-      { stat: 'Weeks per quarter', text: 'building reports by hand, already outdated by the time anyone reads them.' },
+      { stat: 'Paid hours', text: 'wasted every week on tasks that should run automatically.' },
+      { stat: 'Hours daily', text: "lost switching between tools that don't talk to each other." },
+      { stat: 'Lost leads', text: 'every time your team is too slow to respond.' },
+      { stat: 'Too many', text: 'simple processes that still depend on a person to trigger them.' },
     ],
-    close: "These aren't edge cases. They're the default — until you automate them.",
+    close: 'Manual work is costing you more than you think.',
     cta: 'See What We Automate',
   },
   contact: {
-    label: 'Get In Touch',
-    title: "Tell Us Where",
-    titleAccent: "You're Losing Time.",
+    label: 'Get Started',
+    title: 'Want to Know',
+    titleAccent: 'How Much You Could Save?',
     subtitle:
-      "Tell us where you're losing time and money. We'll identify what can be automated and outline a solution — no obligations.",
+      "Tell us what your team does manually. We'll show you what can be automated and what it's worth.",
     form: {
       name: 'Full Name',
       email: 'Email Address',
       company: 'Company (optional)',
-      message: "What's eating your team's time right now? What would you automate first if you could?",
-      submit: 'Show Me What to Automate',
+      message: "What's taking up most of your team's time right now?",
+      submit: 'Get My Automation Plan',
       submitting: 'Sending...',
       success: "Message sent! We'll get back to you within 24 hours.",
     },
     cta: {
-      title: 'Prefer to talk first?',
+      title: 'Prefer to talk?',
       subtitle:
-        'Book a free 30-minute discovery call. We map your biggest automation opportunity and outline a tailored solution — no obligations.',
+        'Book a free 30-minute call. We map your biggest automation opportunity — no obligations.',
       button: 'Get My Automation Plan',
     },
   },
   footer: {
     description:
-      'Custom AI systems that eliminate manual work, reduce costs, and scale with your business.',
+      'Custom automation systems that reduce manual work, cut costs, and scale with your business.',
     links: {
       services: 'Services',
       work: 'Case Studies',
