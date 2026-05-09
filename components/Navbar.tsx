@@ -95,7 +95,6 @@ export function Navbar() {
     { label: t.nav.services, href: '#services' },
     { label: t.nav.work, href: '#examples' },
     { label: t.nav.process, href: '#process' },
-    { label: t.nav.contact, href: '#contact' },
   ]
 
   const handleNav = (href: string) => {
@@ -174,7 +173,7 @@ export function Navbar() {
       <div className={`fixed inset-0 z-40 lg:hidden transition-all duration-300 ${mobileOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
         <div className="absolute inset-0 bg-black/60" onClick={() => setMobileOpen(false)} />
         <div className={`absolute top-0 right-0 h-full w-72 bg-ink-900 border-l border-white/10 p-8 pt-24 flex flex-col gap-1 transition-transform duration-300 ${mobileOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-          {links.map((link) => (
+          {[...links, { label: t.nav.contact, href: '#contact' }].map((link) => (
             <button key={link.href} onClick={() => handleNav(link.href)}
               className="text-left px-4 py-3.5 text-base font-ui font-medium text-zinc-400 hover:text-white hover:bg-white/6 rounded-lg transition-all duration-200"
             >

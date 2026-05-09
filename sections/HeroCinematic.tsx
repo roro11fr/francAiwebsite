@@ -204,23 +204,6 @@ export function HeroCinematic() {
               </a>
             </motion.div>
 
-            {/* Badges */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.72 }}
-              className="flex flex-wrap gap-2"
-            >
-              {t.hero.badges.map((badge, i) => (
-                <span
-                  key={i}
-                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-medium text-violet-300/70 border border-violet-800/50 bg-violet-900/20"
-                >
-                  <span className="w-1 h-1 rounded-full bg-violet-500 flex-shrink-0" />
-                  {badge}
-                </span>
-              ))}
-            </motion.div>
           </div>
 
           {/* RIGHT — portrait */}
