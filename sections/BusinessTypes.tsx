@@ -1,10 +1,9 @@
 'use client'
 
-import { Stethoscope, ShoppingCart, Briefcase, Building2 } from 'lucide-react'
 import { useLanguage } from '@/context/LanguageContext'
 import { useInView } from '@/hooks/useInView'
-
-const iconMap = { Stethoscope, ShoppingCart, Briefcase, Building2 }
+import { SectionLabel } from '@/components/ui/SectionWrapper'
+import { ArrowRight } from 'lucide-react'
 
 export function BusinessTypes() {
   const { t } = useLanguage()
@@ -17,62 +16,50 @@ export function BusinessTypes() {
 
       <div ref={ref as React.RefObject<HTMLDivElement>} className="relative z-10 max-w-screen-xl mx-auto px-6 sm:px-10 py-20 lg:py-28">
 
-        {/* Header — no SectionLabel, direct headline */}
-        <div className={`animate-enter ${isVisible ? 'is-visible' : ''} mb-14`}>
-          <h2 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-[3.5rem] text-white leading-tight tracking-tight">
+        <div className={`animate-enter ${isVisible ? 'is-visible' : ''} mb-12`}>
+          <SectionLabel inverted>{t.businessTypes.label}</SectionLabel>
+          <h2 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-[3.5rem] text-white leading-tight tracking-tight max-w-3xl">
             {t.businessTypes.title}{' '}
             <span className="text-violet-400">{t.businessTypes.titleAccent}</span>
           </h2>
         </div>
 
-        {/* Asymmetric grid — first card wider */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {t.businessTypes.items.map((item, i) => {
-            const Icon = iconMap[item.icon as keyof typeof iconMap] ?? Briefcase
-            const isWide = i === 0
-            return (
-              <div
-                key={i}
-                className={`animate-enter animate-enter-delay-${Math.min(i + 1, 4)} ${isVisible ? 'is-visible' : ''} group relative bg-white/5 border border-white/8 rounded-2xl p-8 overflow-hidden flex flex-col justify-between transition-all duration-300 hover:bg-white/8 hover:border-violet-500/30 hover:-translate-y-1 ${isWide ? 'lg:col-span-2 min-h-[300px]' : 'min-h-[280px]'}`}
-              >
-                {/* Giant background icon */}
-                <div className="absolute -bottom-6 -right-6 text-white/5 group-hover:text-violet-500/10 transition-colors duration-300">
-                  <Icon size={isWide ? 160 : 120} strokeWidth={isWide ? 0.75 : 1} />
-                </div>
+        <div className={`animate-enter animate-enter-delay-1 ${isVisible ? 'is-visible' : ''} grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start`}>
 
-                <div className="relative z-10">
-                  <div className="flex items-center gap-3 mb-5">
-                    <div className="w-10 h-10 rounded-xl bg-violet-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-violet-500/30 transition-colors duration-300">
-                      <Icon size={20} className="text-violet-400" />
-                    </div>
-                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-md bg-white/8 border border-white/10 text-zinc-400 text-xs font-ui font-semibold tracking-wide">
-                      {item.tag}
-                    </span>
-                  </div>
+          {/* Left — copy */}
+          <div>
+            <p className="text-zinc-400 text-base font-ui leading-relaxed mb-10">
+              {t.businessTypes.copy}
+            </p>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 text-sm font-ui font-semibold text-violet-400 hover:text-violet-300 transition-colors group"
+            >
+              {t.audit.cta}
+              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+            </a>
+          </div>
 
-                  <h3 className={`font-display font-extrabold text-white mb-3 group-hover:text-violet-300 transition-colors ${isWide ? 'text-3xl' : 'text-2xl'}`}>
-                    {item.industry}
-                  </h3>
-                </div>
-
-                <div className="relative z-10 space-y-3">
-                  <div>
-                    <span className="text-[10px] font-ui font-semibold text-red-400/80 uppercase tracking-widest block mb-1">
-                      {t.ui.challenge}
-                    </span>
-                    <p className="text-zinc-500 text-sm leading-relaxed font-ui">{item.challenge}</p>
-                  </div>
-                  <div className="h-px bg-white/8" />
-                  <div>
-                    <span className="text-[10px] font-ui font-semibold text-violet-400 uppercase tracking-widest block mb-1">
-                      {t.ui.solution}
-                    </span>
-                    <p className="text-zinc-300 text-sm leading-relaxed font-ui font-medium">{item.solution}</p>
-                  </div>
-                </div>
-              </div>
-            )
-          })}
+          {/* Right — tag cloud */}
+          <div className={`animate-enter animate-enter-delay-2 ${isVisible ? 'is-visible' : ''}`}>
+            <p className="text-[10px] font-ui font-semibold text-zinc-600 uppercase tracking-[0.2em] mb-5">
+              {t.businessTypes.label}
+            </p>
+            <div className="flex flex-wrap gap-2.5">
+              {t.businessTypes.examples.map((example, i) => (
+                <span
+                  key={i}
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-ui font-medium text-zinc-400 border border-white/10 bg-white/[0.03] hover:border-violet-500/30 hover:text-violet-300 hover:bg-violet-500/5 transition-all duration-200 cursor-default"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-violet-700 flex-shrink-0" />
+                  {example}
+                </span>
+              ))}
+            </div>
+            <p className="text-zinc-700 text-xs font-ui mt-5 leading-relaxed">
+              {/* subtle note that these are examples, not the only niches */}
+            </p>
+          </div>
         </div>
       </div>
     </section>

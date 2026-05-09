@@ -356,17 +356,16 @@ export function Hero() {
 
         <div
           data-animate
-          className="animate-enter mt-14 flex flex-wrap items-start gap-8 border-t border-white/[0.07] pt-8 sm:gap-10"
+          className="animate-enter mt-14 flex flex-wrap items-start gap-2 border-t border-white/[0.07] pt-8"
         >
-          {t.hero.stats.map((stat, index) => (
-            <div key={stat.value} className={index === 0 ? 'min-w-[110px]' : 'min-w-[120px]'}>
-              <p className="font-display text-3xl font-extrabold tracking-[-0.02em] text-white sm:text-4xl">
-                {stat.value}
-              </p>
-              <p className="mt-1 max-w-[170px] text-[10px] uppercase tracking-[0.18em] text-violet-300/50 sm:text-[11px]">
-                {stat.label}
-              </p>
-            </div>
+          {t.hero.badges.map((badge, i) => (
+            <span
+              key={i}
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-medium text-violet-300/70 border border-violet-800/50 bg-violet-900/20"
+            >
+              <span className="w-1 h-1 rounded-full bg-violet-500 flex-shrink-0" />
+              {badge}
+            </span>
           ))}
         </div>
 

@@ -17,7 +17,6 @@ function FLogoGlow() {
         zIndex: 10,
       }}
     >
-      {/* breathing glow — only animated element */}
       <motion.div
         style={{
           position: "absolute",
@@ -31,7 +30,6 @@ function FLogoGlow() {
         animate={{ opacity: [0.18, 0.36, 0.18] }}
         transition={{ duration: 3.8, repeat: Infinity, ease: "easeInOut" }}
       />
-      {/* static logo mark blended into hoodie fabric */}
       <img
         src="/assets/new_logo_clean.png"
         alt=""
@@ -48,11 +46,8 @@ function FLogoGlow() {
   );
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// Hero
-// ─────────────────────────────────────────────────────────────────────────────
 export function HeroCinematic() {
-  const { t } = useLanguage()
+  const { t } = useLanguage();
   return (
     <>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -67,9 +62,8 @@ export function HeroCinematic() {
         style={{
           background: "#05050f",
           fontFamily: "'DM Sans', sans-serif",
-          height: "100vh",
-          minHeight: 640,
-          maxHeight: 920,
+          minHeight: "100vh",
+          maxHeight: 980,
         }}
       >
         {/* background grid */}
@@ -104,15 +98,18 @@ export function HeroCinematic() {
 
         <div
           className="relative z-10 h-full max-w-7xl mx-auto px-6 md:px-12
-                     grid grid-cols-1 lg:grid-cols-2 items-stretch"
+                     grid grid-cols-1 lg:grid-cols-2 items-center"
+          style={{ minHeight: "calc(100vh - 64px)" }}
         >
           {/* LEFT */}
-          <div className="flex flex-col justify-center py-6 lg:py-8 pr-0 lg:pr-10">
+          <div className="flex flex-col justify-center py-14 lg:py-20 pr-0 lg:pr-10">
+
+            {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: -8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="flex items-center gap-2 mb-5"
+              className="flex items-center gap-2 mb-6"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse" />
               <span className="text-[11px] text-violet-300/60 uppercase tracking-[0.22em] font-medium">
@@ -120,18 +117,15 @@ export function HeroCinematic() {
               </span>
             </motion.div>
 
+            {/* Headline */}
             <motion.h1
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.18,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="text-white leading-[1.0] mb-5"
+              transition={{ duration: 0.8, delay: 0.18, ease: [0.16, 1, 0.3, 1] }}
+              className="text-white leading-[1.05] mb-5"
               style={{
                 fontFamily: "'Manrope', sans-serif",
-                fontSize: "clamp(2.2rem, 3.8vw, 3.4rem)",
+                fontSize: "clamp(2.2rem, 3.6vw, 3.4rem)",
                 fontWeight: 800,
                 letterSpacing: "-0.04em",
               }}
@@ -150,19 +144,31 @@ export function HeroCinematic() {
               </span>
             </motion.h1>
 
+            {/* Subheadline */}
             <motion.p
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.35 }}
-              className="text-violet-200/45 text-base md:text-lg leading-relaxed max-w-md mb-7"
+              className="text-violet-200/45 text-base md:text-lg leading-relaxed max-w-md mb-5"
             >
               {t.hero.subheadline}
             </motion.p>
 
+            {/* Supporting line */}
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.48 }}
+              className="text-violet-300/60 text-sm font-medium leading-relaxed max-w-md mb-7 italic"
+            >
+              {t.hero.supporting}
+            </motion.p>
+
+            {/* CTAs */}
             <motion.div
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
+              transition={{ duration: 0.6, delay: 0.58 }}
               className="flex flex-wrap gap-3 mb-8"
             >
               <a
@@ -198,43 +204,29 @@ export function HeroCinematic() {
               </a>
             </motion.div>
 
+            {/* Badges */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.68 }}
-              className="flex items-start gap-10 pt-8 border-t border-white/[0.07]"
+              transition={{ duration: 0.6, delay: 0.72 }}
+              className="flex flex-wrap gap-2"
             >
-              {[
-                { v: t.hero.stats[0].value, l: t.hero.stats[0].label, d: 0.72 },
-                { v: t.hero.stats[1].value, l: t.hero.stats[1].label, d: 0.82 },
-                { v: t.hero.stats[2].value, l: t.hero.stats[2].label, d: 0.92 },
-              ].map(({ v, l, d }) => (
-                <motion.div
-                  key={v}
-                  initial={{ opacity: 0, y: 6 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: d }}
+              {t.hero.badges.map((badge, i) => (
+                <span
+                  key={i}
+                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-medium text-violet-300/70 border border-violet-800/50 bg-violet-900/20"
                 >
-                  <p
-                    className="text-2xl font-bold text-white"
-                    style={{
-                      fontFamily: "'Syne',sans-serif",
-                      letterSpacing: "-0.02em",
-                    }}
-                  >
-                    {v}
-                  </p>
-                  <p className="text-[10px] text-violet-300/50 uppercase tracking-widest mt-0.5">
-                    {l}
-                  </p>
-                </motion.div>
+                  <span className="w-1 h-1 rounded-full bg-violet-500 flex-shrink-0" />
+                  {badge}
+                </span>
               ))}
             </motion.div>
           </div>
 
-          {/* RIGHT — full column height via items-stretch; clips orbit bleed */}
+          {/* RIGHT — portrait */}
           <motion.div
             className="relative hidden lg:block overflow-hidden"
+            style={{ height: "calc(100vh - 64px)", maxHeight: 916 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.0, delay: 0.3 }}
@@ -256,7 +248,7 @@ export function HeroCinematic() {
               }}
             />
 
-            {/* subject — bounded container */}
+            {/* subject */}
             <div
               style={{
                 position: "absolute",
@@ -269,9 +261,9 @@ export function HeroCinematic() {
                 zIndex: 3,
                 pointerEvents: "none",
                 WebkitMaskImage:
-                "radial-gradient(ellipse 80% 90% at 50% 50%, black 0%, black 28%, rgba(0,0,0,0.92) 46%, rgba(0,0,0,0.45) 62%, rgba(0,0,0,0.08) 76%, transparent 88%)",
-              maskImage:
-                "radial-gradient(ellipse 80% 90% at 50% 50%, black 0%, black 28%, rgba(0,0,0,0.92) 46%, rgba(0,0,0,0.45) 62%, rgba(0,0,0,0.08) 76%, transparent 88%)",
+                  "radial-gradient(ellipse 80% 90% at 50% 50%, black 0%, black 28%, rgba(0,0,0,0.92) 46%, rgba(0,0,0,0.45) 62%, rgba(0,0,0,0.08) 76%, transparent 88%)",
+                maskImage:
+                  "radial-gradient(ellipse 80% 90% at 50% 50%, black 0%, black 28%, rgba(0,0,0,0.92) 46%, rgba(0,0,0,0.45) 62%, rgba(0,0,0,0.08) 76%, transparent 88%)",
               }}
             >
               <img
@@ -292,7 +284,6 @@ export function HeroCinematic() {
                     "drop-shadow(0 24px 48px rgba(0,0,0,0.75))",
                 }}
               />
-              {/* directional edge fades — paint exact bg color over residual color-cast pixels before mask transition */}
               <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "10%", background: "linear-gradient(to bottom, #05050f 0%, transparent 100%)", zIndex: 5, pointerEvents: "none" }} />
               <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "20%", background: "linear-gradient(to top, #05050f 0%, transparent 100%)", zIndex: 5, pointerEvents: "none" }} />
               <div style={{ position: "absolute", top: 0, left: 0, bottom: 0, width: "18%", background: "linear-gradient(to right, #05050f 0%, transparent 100%)", zIndex: 5, pointerEvents: "none" }} />

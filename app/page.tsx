@@ -2,9 +2,12 @@ import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 import { HeroCinematic } from '@/sections/HeroCinematic'
 import { Services } from '@/sections/Services'
-import { PainPoints } from '@/sections/PainPoints'
-import { Benefits } from '@/sections/Benefits'
+import { ExampleSystems } from '@/sections/ExampleSystems'
+import { BeforeAfter } from '@/sections/BeforeAfter'
+import { FreeAudit } from '@/sections/FreeAudit'
 import { Process } from '@/sections/Process'
+import { BusinessTypes } from '@/sections/BusinessTypes'
+import { FAQ } from '@/sections/FAQ'
 import { Contact } from '@/sections/Contact'
 
 export default function Home() {
@@ -12,10 +15,13 @@ export default function Home() {
     <main>
       <Navbar />
       <HeroCinematic />
-      <PainPoints />
       <Services />
-      <Benefits />
+      <ExampleSystems />
+      <BeforeAfter />
+      <FreeAudit />
       <Process />
+      <BusinessTypes />
+      <FAQ />
       <Contact />
       <Footer />
     </main>

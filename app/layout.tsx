@@ -18,21 +18,32 @@ const jakarta = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'FrancAI — Build. Automate. Scale.',
+  title: 'FrancAI | Custom AI Automation Systems for Repetitive Business Work',
   description:
-    'Custom AI solutions that save businesses time and money. We build modern digital products and automate business processes using AI.',
-  keywords: ['AI automation', 'custom AI solutions', 'chatbots', 'voice agents', 'web development', 'business automation', 'FrancAI'],
+    'FrancAI builds custom AI automation systems that handle repetitive tasks, connect your tools, reduce manual work, and help your business operate faster.',
+  keywords: [
+    'AI automation',
+    'custom AI systems',
+    'workflow automation',
+    'business automation',
+    'AI agents',
+    'n8n automation',
+    'CRM automation',
+    'FrancAI',
+    'automatizare AI',
+  ],
   authors: [{ name: 'FrancAI' }],
   openGraph: {
-    title: 'FrancAI — Build. Automate. Scale.',
-    description: 'Custom AI solutions that save businesses time and money.',
+    title: 'FrancAI | Custom AI Automation Systems for Repetitive Business Work',
+    description:
+      'FrancAI builds custom AI automation systems that handle repetitive tasks, connect your tools, reduce manual work, and help your business operate faster.',
     type: 'website',
-    locale: 'ro_RO',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FrancAI — Build. Automate. Scale.',
-    description: 'Custom AI solutions that save businesses time and money.',
+    title: 'FrancAI | Custom AI Automation Systems for Repetitive Business Work',
+    description:
+      'FrancAI builds custom AI automation systems that handle repetitive tasks, connect your tools, reduce manual work, and help your business operate faster.',
   },
   robots: { index: true, follow: true },
 }
