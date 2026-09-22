@@ -21,13 +21,19 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Language>('ro')
 
   useEffect(() => {
-    const saved = localStorage.getItem('francai-lang') as Language
-    if (saved === 'en' || saved === 'ro') setLangState(saved)
+    try {
+      const saved = localStorage.getItem('francai-lang') as Language
+      if (saved === 'en' || saved === 'ro') setLangState(saved)
+    } catch {}
   }, [])
+
+  useEffect(() => {
+    document.documentElement.lang = lang
+  }, [lang])
 
   const setLang = (newLang: Language) => {
     setLangState(newLang)
-    localStorage.setItem('francai-lang', newLang)
+    try { localStorage.setItem('francai-lang', newLang) } catch {}
   }
 
   return (

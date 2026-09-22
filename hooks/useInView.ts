@@ -12,7 +12,7 @@ export function useInView<T extends HTMLElement = HTMLDivElement>({
   threshold = 0.12,
   once = true,
   rootMargin = '0px',
-}: UseInViewOptions = {}): { ref: RefObject<T>; isVisible: boolean } {
+}: UseInViewOptions = {}): { ref: RefObject<T | null>; isVisible: boolean } {
   const ref = useRef<T>(null)
   const [isVisible, setIsVisible] = useState(false)
 

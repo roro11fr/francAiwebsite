@@ -2,16 +2,18 @@
 
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
+import { AICore3D } from "@/components/AICore3D";
 
 const LOGO_W = 102;
 
-function FLogoGlow() {
+function FLogoGlow({ left = "68%", top = "49%", width = LOGO_W }: { left?: string; top?: string; width?: number | string }) {
   return (
     <div
       style={{
         position: "absolute",
-        left: "68%",
-        top: "49%",
+        left,
+        top,
+        width,
         transform: "translate(-50%, -50%)",
         pointerEvents: "none",
         zIndex: 10,
@@ -33,10 +35,11 @@ function FLogoGlow() {
       <img
         src="/assets/new_logo_clean.png"
         alt=""
-        width={LOGO_W}
         draggable={false}
         style={{
           display: "block",
+          width: "100%",
+          height: "auto",
           mixBlendMode: "screen",
           opacity: 0.88,
           filter: "brightness(1.05) drop-shadow(0 0 6px rgba(168,85,247,0.45))",
@@ -50,20 +53,13 @@ export function HeroCinematic() {
   const { t } = useLanguage();
   return (
     <>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap"
-        rel="stylesheet"
-      />
 
       <section
-        className="relative w-full overflow-hidden pt-16"
+        className="relative w-full overflow-hidden pt-16 lg:max-h-[980px]"
         style={{
           background: "#05050f",
-          fontFamily: "'DM Sans', sans-serif",
+          fontFamily: "var(--font-dmsans), sans-serif",
           minHeight: "100vh",
-          maxHeight: 980,
         }}
       >
         {/* background grid */}
@@ -102,7 +98,7 @@ export function HeroCinematic() {
           style={{ minHeight: "calc(100vh - 64px)" }}
         >
           {/* LEFT */}
-          <div className="flex flex-col justify-center py-14 lg:py-20 pr-0 lg:pr-10">
+          <div className="flex flex-col justify-center pt-14 pb-20 lg:py-20 pr-0 lg:pr-10">
 
             {/* Badge */}
             <motion.div
@@ -124,7 +120,7 @@ export function HeroCinematic() {
               transition={{ duration: 0.8, delay: 0.18, ease: [0.16, 1, 0.3, 1] }}
               className="text-white leading-[1.05] mb-5"
               style={{
-                fontFamily: "'Manrope', sans-serif",
+                fontFamily: "var(--font-manrope), sans-serif",
                 fontSize: "clamp(2.2rem, 3.6vw, 3.4rem)",
                 fontWeight: 800,
                 letterSpacing: "-0.04em",
@@ -204,6 +200,48 @@ export function HeroCinematic() {
               </a>
             </motion.div>
 
+            {/* Portrait + 3D core — mobile/tablet (desktop version is the right column) */}
+            <motion.div
+              className="lg:hidden relative mx-auto w-full max-w-[520px] mt-10"
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.0, delay: 0.6 }}
+            >
+              {/* 3D core sits behind the head */}
+              <AICore3D
+                media="(max-width: 1023px)"
+                className="absolute left-[52%] -translate-x-1/2"
+                style={{ top: "-22%", width: "78%", aspectRatio: "1 / 1", zIndex: 0, opacity: 0.9 }}
+              />
+
+              <div
+                className="relative z-10 w-full"
+                style={{
+                  aspectRatio: "616 / 453",
+                  WebkitMaskImage:
+                    "radial-gradient(ellipse 75% 85% at 50% 45%, black 0%, black 40%, rgba(0,0,0,0.6) 62%, transparent 85%)",
+                  maskImage:
+                    "radial-gradient(ellipse 75% 85% at 50% 45%, black 0%, black 40%, rgba(0,0,0,0.6) 62%, transparent 85%)",
+                }}
+              >
+                <img
+                  src="/assets/rsz_poza-cutout_cleanup.png"
+                  alt="Fondatorul FrancAI — creare website-uri și automatizări AI în Suceava"
+                  draggable={false}
+                  className="absolute inset-0 w-full h-full select-none"
+                  style={{ filter: "drop-shadow(0 0 32px rgba(109,40,217,0.16))" }}
+                />
+                <div className="absolute inset-x-0 bottom-0 h-1/4 pointer-events-none" style={{ background: "linear-gradient(to top, #05050f 0%, transparent 100%)" }} />
+                <FLogoGlow left="64.6%" top="49%" width="11.8%" />
+              </div>
+
+              {/* ground glow */}
+              <div
+                className="absolute left-1/2 -translate-x-1/2 bottom-[4%] w-2/3 h-10 pointer-events-none"
+                style={{ background: "radial-gradient(ellipse, rgba(109,40,217,0.40) 0%, transparent 70%)", filter: "blur(20px)" }}
+              />
+            </motion.div>
+
           </div>
 
           {/* RIGHT — portrait */}
@@ -231,6 +269,13 @@ export function HeroCinematic() {
               }}
             />
 
+            {/* 3D core behind the portrait */}
+            <AICore3D
+              media="(min-width: 1024px)"
+              className="absolute left-1/2 -translate-x-1/2"
+              style={{ top: "4%", width: "min(560px, 42vw)", aspectRatio: "1 / 1", zIndex: 2, opacity: 0.9 }}
+            />
+
             {/* subject */}
             <div
               style={{
@@ -251,7 +296,7 @@ export function HeroCinematic() {
             >
               <img
                 src="/assets/rsz_poza-cutout_cleanup.png"
-                alt="Franc — Founder of FrancAI"
+                alt="Fondatorul FrancAI — creare website-uri și automatizări AI în Suceava"
                 draggable={false}
                 style={{
                   position: "absolute",
@@ -326,6 +371,7 @@ export function HeroCinematic() {
           style={{ borderTop: "1px solid rgba(255,255,255,0.04)" }}
         >
           <p
+            className="hidden sm:block"
             style={{
               color: "rgba(196,132,252,0.28)",
               fontSize: 10,
@@ -339,7 +385,7 @@ export function HeroCinematic() {
             {["LinkedIn", "Twitter", "Email"].map((l) => (
               <a
                 key={l}
-                href="#"
+                href={l === "Email" ? "mailto:francaiagency@gmail.com" : "#"}
                 style={{
                   color: "rgba(196,132,252,0.22)",
                   fontSize: 10,

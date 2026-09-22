@@ -1,11 +1,11 @@
 'use client'
 
-import { Globe, Code2, Mic, Zap, Brain, Layers, BarChart2, ArrowRight } from 'lucide-react'
+import { Globe, Code2, Mic, Zap, Brain, Layers, BarChart2, Monitor } from 'lucide-react'
 import { useLanguage } from '@/context/LanguageContext'
 import { useInView } from '@/hooks/useInView'
 import { SectionLabel } from '@/components/ui/SectionWrapper'
 
-const iconMap = { Globe, Code2, Mic, Zap, Brain, Layers, BarChart2 }
+const iconMap = { Globe, Code2, Mic, Zap, Brain, Layers, BarChart2, Monitor }
 
 export function Services() {
   const { t } = useLanguage()

@@ -62,11 +62,12 @@ export function Footer() {
 
           {/* Copyright + email */}
           <div className="flex flex-col sm:items-end gap-1">
+            <p className="text-zinc-600 text-xs font-ui">{t.ui.location}</p>
             <a
-              href="mailto:catalin.franciuc@student.usv.ro"
+              href="mailto:francaiagency@gmail.com"
               className="text-zinc-600 hover:text-violet-400 text-xs font-ui transition-colors"
             >
-              catalin.franciuc@student.usv.ro
+              francaiagency@gmail.com
             </a>
             <p className="text-zinc-800 text-xs font-ui">© {year} {t.footer.copyright}</p>
           </div>

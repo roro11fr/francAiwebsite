@@ -1,6 +1,6 @@
 export const en = {
   nav: {
-    services: 'What We Automate',
+    services: 'Services',
     work: 'Examples',
     process: 'Process',
     about: 'About',
@@ -23,13 +23,14 @@ export const en = {
     error: 'Something went wrong. Please try again.',
     before: 'Before',
     after: 'After',
+    location: 'Suceava, Romania',
   },
   hero: {
-    badge: 'AI Automation Studio',
-    headline: 'AI Automation Systems',
-    headlineAccent: 'Built Around Your Business',
+    badge: 'Websites & AI Automation · Suceava',
+    headline: 'Websites & AI Automation',
+    headlineAccent: 'for Your Business in Suceava',
     subheadline:
-      'We design and build custom AI-powered workflows that handle repetitive tasks, connect your tools, and help your business operate faster.',
+      'We build modern, fast, Google-optimized websites and AI systems that handle repetitive tasks and connect your tools. We work with businesses in Suceava and across Romania.',
     supporting: "We don't replace your people. We replace the repetitive work holding them back.",
     cta1: 'Get Free Audit',
     cta2: 'See Examples',
@@ -41,10 +42,10 @@ export const en = {
     ],
   },
   services: {
-    label: 'What We Automate',
-    title: 'What We',
-    titleAccent: 'Automate',
-    subtitle: 'Every business has repetitive work. We find it, map it, and build the system that handles it.',
+    label: 'Services',
+    title: 'Websites &',
+    titleAccent: 'AI Automation',
+    subtitle: 'Separately or together: a website that brings in customers and the systems that handle the repetitive work behind it.',
     businessTag: 'Built for businesses with repetitive work — service businesses, clinics, agencies, creators, e-commerce, sales teams, and admin-heavy teams.',
     items: [
       {
@@ -88,6 +89,13 @@ export const en = {
         description: 'Connect the tools you already use so your systems talk to each other automatically.',
         examples: 'CRMs, forms, email, spreadsheets, messaging apps, databases.',
         badge: 'Integrations',
+      },
+      {
+        icon: 'Monitor',
+        title: 'Website Development',
+        description: 'Modern, fast, responsive websites built to win customers and connected directly to your automations.',
+        examples: 'Business websites, landing pages, contact and booking forms, CRM integration.',
+        badge: 'Web',
       },
     ],
   },
@@ -214,6 +222,18 @@ export const en = {
     titleAccent: 'Questions',
     items: [
       {
+        q: 'Do you build websites and automations together or separately?',
+        a: 'Both. You can order just a website, just an automation, or a complete package: a new site connected directly to automations, with forms that go into your CRM, automatic bookings, and AI replies to messages.',
+      },
+      {
+        q: 'Do you work with businesses in Suceava?',
+        a: 'Yes. FrancAI is based in Suceava and works with local businesses in Suceava county, as well as online with businesses across Romania.',
+      },
+      {
+        q: 'How much does a website cost?',
+        a: 'It depends on the number of pages, features, and integrations. After a short conversation you get a clear quote tailored to your business.',
+      },
+      {
         q: 'Do I need to know exactly what I want to automate?',
         a: 'No. You only need to tell us what feels repetitive, slow, or manual. We help identify what can be automated.',
       },
@@ -268,9 +288,9 @@ export const en = {
   },
   footer: {
     description:
-      'Custom AI automation systems that handle repetitive work, connect your tools, and help your business operate faster.',
+      'Websites and AI automation in Suceava. Fast websites and custom systems that handle repetitive work.',
     links: {
-      services: 'What We Automate',
+      services: 'Services',
       work: 'Examples',
       process: 'Process',
       about: 'About',

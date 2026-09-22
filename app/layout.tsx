@@ -1,57 +1,86 @@
-import type { Metadata } from 'next'
-import { Bricolage_Grotesque, Plus_Jakarta_Sans } from 'next/font/google'
+import type { Metadata, Viewport } from 'next'
+import { Bricolage_Grotesque, Plus_Jakarta_Sans, Manrope, DM_Sans } from 'next/font/google'
 import './globals.css'
 import { LanguageProvider } from '@/context/LanguageContext'
+import { StructuredData } from '@/components/StructuredData'
+import { SITE, SITE_URL } from '@/lib/site'
 
 const bricolage = Bricolage_Grotesque({
-  subsets: ['latin'],
+  subsets: ['latin', 'latin-ext'],
   weight: ['400', '500', '600', '700', '800'],
   variable: '--font-bricolage',
   display: 'swap',
 })
 
 const jakarta = Plus_Jakarta_Sans({
-  subsets: ['latin'],
+  subsets: ['latin', 'latin-ext'],
   weight: ['300', '400', '500', '600', '700', '800'],
   variable: '--font-jakarta',
   display: 'swap',
 })
 
+const manrope = Manrope({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['700', '800'],
+  variable: '--font-manrope',
+  display: 'swap',
+})
+
+const dmSans = DM_Sans({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['300', '400', '500'],
+  variable: '--font-dmsans',
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
-  title: 'FrancAI | Custom AI Automation Systems for Repetitive Business Work',
-  description:
-    'FrancAI builds custom AI automation systems that handle repetitive tasks, connect your tools, reduce manual work, and help your business operate faster.',
+  metadataBase: new URL(SITE_URL),
+  title: SITE.title,
+  description: SITE.description,
   keywords: [
-    'AI automation',
-    'custom AI systems',
-    'workflow automation',
-    'business automation',
-    'AI agents',
-    'n8n automation',
-    'CRM automation',
+    'creare site Suceava',
+    'creare website Suceava',
+    'web design Suceava',
+    'site de prezentare Suceava',
+    'automatizări AI Suceava',
+    'automatizare procese firme',
+    'chatbot AI pentru firme',
+    'agenție web Suceava',
+    'creare site-uri',
+    'automatizări AI',
     'FrancAI',
-    'automatizare AI',
   ],
   authors: [{ name: 'FrancAI' }],
+  alternates: { canonical: '/' },
   openGraph: {
-    title: 'FrancAI | Custom AI Automation Systems for Repetitive Business Work',
-    description:
-      'FrancAI builds custom AI automation systems that handle repetitive tasks, connect your tools, reduce manual work, and help your business operate faster.',
+    title: SITE.title,
+    description: SITE.description,
+    url: '/',
+    siteName: SITE.name,
+    locale: 'ro_RO',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FrancAI | Custom AI Automation Systems for Repetitive Business Work',
-    description:
-      'FrancAI builds custom AI automation systems that handle repetitive tasks, connect your tools, reduce manual work, and help your business operate faster.',
+    title: SITE.title,
+    description: SITE.description,
   },
-  robots: { index: true, follow: true },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large' } },
+  other: {
+    'geo.region': 'RO-SV',
+    'geo.placename': 'Suceava',
+  },
+}
+
+export const viewport: Viewport = {
+  themeColor: '#05050f',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ro" className={`${bricolage.variable} ${jakarta.variable}`}>
+    <html lang="ro" className={`${bricolage.variable} ${jakarta.variable} ${manrope.variable} ${dmSans.variable}`}>
       <body className="font-body antialiased bg-cream-50 text-ink-900">
+        <StructuredData />
         <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>

@@ -55,7 +55,7 @@ export function FAQ() {
 
                 <div
                   className="overflow-hidden transition-all duration-300 ease-in-out"
-                  style={{ maxHeight: isOpen ? '240px' : '0px', opacity: isOpen ? 1 : 0 }}
+                  style={{ maxHeight: isOpen ? '400px' : '0px', opacity: isOpen ? 1 : 0 }}
                 >
                   <p className="text-zinc-400 text-sm font-ui leading-relaxed pb-6 pr-12">
                     {item.a}

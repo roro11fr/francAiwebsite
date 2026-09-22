@@ -12,12 +12,13 @@ interface FormState {
   company: string
   website: string
   message: string
+  botField: string
 }
 
 export function Contact() {
   const { t } = useLanguage()
   const { ref, isVisible } = useInView()
-  const [form, setForm] = useState<FormState>({ name: '', email: '', company: '', website: '', message: '' })
+  const [form, setForm] = useState<FormState>({ name: '', email: '', company: '', website: '', message: '', botField: '' })
   const [submitting, setSubmitting] = useState(false)
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState('')
@@ -35,7 +36,7 @@ export function Contact() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
       })
-      if (res.ok) { setSuccess(true); setForm({ name: '', email: '', company: '', website: '', message: '' }) }
+      if (res.ok) { setSuccess(true); setForm({ name: '', email: '', company: '', website: '', message: '', botField: '' }) }
       else setError(t.ui.error)
     } catch { setError(t.ui.error) }
     finally { setSubmitting(false) }
@@ -74,6 +75,12 @@ export function Contact() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
+                {/* Honeypot — hidden from people, catches spam bots */}
+                <input
+                  type="text" name="botField" value={form.botField} onChange={handleChange}
+                  tabIndex={-1} autoComplete="off" aria-hidden="true"
+                  className="absolute -left-[9999px] w-px h-px opacity-0"
+                />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-[11px] font-ui font-semibold text-zinc-500 uppercase tracking-widest mb-2">

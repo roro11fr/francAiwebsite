@@ -90,7 +90,7 @@ export function FreeAudit() {
             </div>
 
             {/* After */}
-            <div className="rounded-xl border border-violet-500/25 bg-violet-500/[0.04] p-6">
+            <div className="relative rounded-xl border border-violet-500/25 bg-violet-500/[0.04] p-6">
               <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-violet-900/10 to-transparent pointer-events-none" />
               <div className="flex items-center gap-2.5 mb-3">
                 <div className="w-6 h-6 rounded-md bg-violet-500/20 border border-violet-500/30 flex items-center justify-center flex-shrink-0">

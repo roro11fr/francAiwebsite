@@ -99,6 +99,8 @@ export function Navbar() {
 
   const handleNav = (href: string) => {
     setMobileOpen(false)
+    // Unlock scrolling right away; the effect would run too late for scrollIntoView
+    document.body.style.overflow = ''
     const el = document.querySelector(href)
     if (el) el.scrollIntoView({ behavior: 'smooth' })
   }
@@ -107,7 +109,7 @@ export function Navbar() {
     <>
       {/* Always-black navbar — sits flush against the dark hero */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-ink-900 border-b border-white/8">
-        <div className="max-w-screen-2xl mx-auto px-6 sm:px-10 flex items-center justify-between h-16">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-10 flex items-center justify-between h-16">
 
           {/* Logo */}
           <a
@@ -152,11 +154,11 @@ export function Navbar() {
           </div>
 
           {/* Mobile */}
-          <div className="flex lg:hidden items-center gap-2">
+          <div className="flex lg:hidden items-center gap-1 sm:gap-2">
             <div className="flex items-center gap-0.5 bg-white/6 border border-white/10 rounded-lg p-0.5">
               {(['ro', 'en'] as const).map((l) => (
                 <button key={l} onClick={() => setLang(l)}
-                  className={`px-2.5 py-1 rounded-md text-xs font-ui font-semibold transition-all duration-200 ${lang === l ? 'bg-violet-700 text-white' : 'text-zinc-500 hover:text-zinc-300'}`}
+                  className={`px-2.5 py-2 rounded-md text-xs font-ui font-semibold transition-all duration-200 ${lang === l ? 'bg-violet-700 text-white' : 'text-zinc-500 hover:text-zinc-300'}`}
                 >
                   {l.toUpperCase()}
                 </button>

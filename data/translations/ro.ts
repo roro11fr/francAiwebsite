@@ -2,7 +2,7 @@ import type { Translations } from './en'
 
 export const ro: Translations = {
   nav: {
-    services: 'Ce automatizăm',
+    services: 'Servicii',
     work: 'Exemple',
     process: 'Proces',
     about: 'Despre',
@@ -25,13 +25,14 @@ export const ro: Translations = {
     error: 'Ceva a mers greșit. Te rugăm să încerci din nou.',
     before: 'Înainte',
     after: 'După',
+    location: 'Suceava, România',
   },
   hero: {
-    badge: 'Studio AI & Automatizare',
-    headline: 'Sisteme de automatizare AI',
-    headlineAccent: 'construite în jurul afacerii tale',
+    badge: 'Website-uri & Automatizări AI · Suceava',
+    headline: 'Creare site-uri și automatizări AI',
+    headlineAccent: 'pentru afacerea ta din Suceava',
     subheadline:
-      'Proiectăm și construim workflow-uri AI custom care preiau taskurile repetitive, conectează tool-urile tale și ajută business-ul să funcționeze mai rapid.',
+      'Creăm website-uri moderne, rapide și optimizate pentru Google, plus sisteme AI care preiau taskurile repetitive și conectează tool-urile tale. Lucrăm cu firme din Suceava și din toată România.',
     supporting: 'Nu îți înlocuim oamenii. Înlocuim munca repetitivă care îi ține pe loc.',
     cta1: 'Primește audit gratuit',
     cta2: 'Vezi exemple',
@@ -43,10 +44,10 @@ export const ro: Translations = {
     ],
   },
   services: {
-    label: 'Ce automatizăm',
-    title: 'Ce',
-    titleAccent: 'automatizăm',
-    subtitle: 'Fiecare business are muncă repetitivă. Noi o identificăm, o mapăm și construim sistemul care o preia.',
+    label: 'Servicii',
+    title: 'Website-uri și',
+    titleAccent: 'automatizări AI',
+    subtitle: 'Separat sau împreună: un website care aduce clienți și sistemele care preiau munca repetitivă din spatele lui.',
     businessTag: 'Construit pentru business-uri cu muncă repetitivă — servicii, clinici, agenții, creatori, e-commerce, echipe de vânzări și echipe cu mult admin.',
     items: [
       {
@@ -90,6 +91,13 @@ export const ro: Translations = {
         description: 'Conectăm tool-urile pe care le folosești deja, astfel încât sistemele tale să comunice automat.',
         examples: 'CRM-uri, formulare, email, spreadsheet-uri, messaging, baze de date.',
         badge: 'Integrări',
+      },
+      {
+        icon: 'Monitor',
+        title: 'Creare website-uri',
+        description: 'Construim website-uri moderne, rapide și responsive, gata să atragă clienți și conectate direct la automatizările tale.',
+        examples: 'Site-uri de prezentare, landing page-uri, formulare de contact și rezervări, integrare CRM.',
+        badge: 'Web',
       },
     ],
   },
@@ -217,6 +225,18 @@ export const ro: Translations = {
     titleAccent: 'frecvente',
     items: [
       {
+        q: 'Faceți website-uri și automatizări împreună sau separat?',
+        a: 'Ambele. Poți comanda doar un website, doar o automatizare sau un pachet complet: un site nou conectat direct la automatizări, cu formulare care ajung în CRM, programări automate și răspunsuri AI la mesaje.',
+      },
+      {
+        q: 'Lucrați cu firme din Suceava?',
+        a: 'Da. FrancAI este din Suceava și lucrăm cu firme locale din Suceava și din județ, dar și online cu business-uri din toată România.',
+      },
+      {
+        q: 'Cât costă un website?',
+        a: 'Depinde de numărul de pagini, funcționalități și integrări. După o discuție scurtă primești o ofertă clară, adaptată business-ului tău.',
+      },
+      {
         q: 'Trebuie să știu exact ce vreau să automatizez?',
         a: 'Nu. Trebuie doar să ne spui ce pare repetitiv, lent sau manual. Te ajutăm noi să identifici ce poate fi automatizat.',
       },
@@ -271,9 +291,9 @@ export const ro: Translations = {
   },
   footer: {
     description:
-      'Sisteme AI custom care preiau munca repetitivă, conectează tool-urile și ajută business-ul să funcționeze mai rapid.',
+      'Creare site-uri și automatizări AI în Suceava. Website-uri rapide și sisteme custom care preiau munca repetitivă.',
     links: {
-      services: 'Ce automatizăm',
+      services: 'Servicii',
       work: 'Exemple',
       process: 'Proces',
       about: 'Despre',
