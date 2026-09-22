@@ -28,11 +28,11 @@ export const ro: Translations = {
     location: 'Suceava, România',
   },
   hero: {
-    badge: 'Website-uri & Automatizări AI · Suceava',
+    badge: 'Studio Web & Automatizări AI',
     headline: 'Creare site-uri și automatizări AI',
-    headlineAccent: 'pentru afacerea ta din Suceava',
+    headlineAccent: 'construite în jurul afacerii tale',
     subheadline:
-      'Creăm website-uri moderne, rapide și optimizate pentru Google, plus sisteme AI care preiau taskurile repetitive și conectează tool-urile tale. Lucrăm cu firme din Suceava și din toată România.',
+      'Creăm website-uri moderne, rapide și optimizate pentru Google, plus sisteme AI care preiau taskurile repetitive și conectează tool-urile tale. Lucrăm online cu afaceri din toată România și din străinătate.',
     supporting: 'Nu îți înlocuim oamenii. Înlocuim munca repetitivă care îi ține pe loc.',
     cta1: 'Primește audit gratuit',
     cta2: 'Vezi exemple',
@@ -229,8 +229,8 @@ export const ro: Translations = {
         a: 'Ambele. Poți comanda doar un website, doar o automatizare sau un pachet complet: un site nou conectat direct la automatizări, cu formulare care ajung în CRM, programări automate și răspunsuri AI la mesaje.',
       },
       {
-        q: 'Lucrați cu firme din Suceava?',
-        a: 'Da. FrancAI este din Suceava și lucrăm cu firme locale din Suceava și din județ, dar și online cu business-uri din toată România.',
+        q: 'Contează unde este firma mea?',
+        a: 'Nu. Lucrăm online cu afaceri din toată România și din străinătate, prin apeluri video și email. Comunicăm în română sau engleză.',
       },
       {
         q: 'Cât costă un website?',
@@ -291,7 +291,7 @@ export const ro: Translations = {
   },
   footer: {
     description:
-      'Creare site-uri și automatizări AI în Suceava. Website-uri rapide și sisteme custom care preiau munca repetitivă.',
+      'Creare site-uri și automatizări AI pentru afaceri din România și din străinătate. Website-uri rapide și sisteme custom care preiau munca repetitivă.',
     links: {
       services: 'Servicii',
       work: 'Exemple',

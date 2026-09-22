@@ -9,7 +9,7 @@ export const SITE = {
   city: 'Suceava',
   region: 'Județul Suceava',
   country: 'RO',
-  title: 'Creare Site-uri și Automatizări AI în Suceava | FrancAI',
+  title: 'Creare Site-uri și Automatizări AI pentru Afaceri | FrancAI',
   description:
-    'FrancAI creează website-uri moderne și automatizări AI pentru firme din Suceava și din toată România. Site-uri rapide, optimizate SEO, conectate la sisteme care preiau munca repetitivă. Audit gratuit.',
+    'FrancAI creează website-uri moderne și automatizări AI pentru afaceri din România și din străinătate. Site-uri rapide, optimizate SEO, conectate la sisteme care preiau munca repetitivă. Audit gratuit.',
 }

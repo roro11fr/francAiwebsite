@@ -38,16 +38,16 @@ export const metadata: Metadata = {
   title: SITE.title,
   description: SITE.description,
   keywords: [
-    'creare site Suceava',
-    'creare website Suceava',
-    'web design Suceava',
-    'site de prezentare Suceava',
-    'automatizări AI Suceava',
+    'creare site-uri',
+    'creare website firma',
+    'web design Romania',
+    'site de prezentare',
+    'landing page',
+    'automatizări AI',
     'automatizare procese firme',
     'chatbot AI pentru firme',
-    'agenție web Suceava',
-    'creare site-uri',
-    'automatizări AI',
+    'agentie web',
+    'AI automation agency',
     'FrancAI',
   ],
   authors: [{ name: 'FrancAI' }],
@@ -66,10 +66,6 @@ export const metadata: Metadata = {
     description: SITE.description,
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large' } },
-  other: {
-    'geo.region': 'RO-SV',
-    'geo.placename': 'Suceava',
-  },
 }
 
 export const viewport: Viewport = {

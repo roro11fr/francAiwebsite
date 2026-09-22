@@ -20,9 +20,8 @@ export function StructuredData() {
       addressCountry: SITE.country,
     },
     areaServed: [
-      { '@type': 'City', name: 'Suceava' },
-      { '@type': 'AdministrativeArea', name: 'Județul Suceava' },
       { '@type': 'Country', name: 'România' },
+      { '@type': 'Place', name: 'Worldwide' },
     ],
     sameAs: [SITE.instagram],
     knowsLanguage: ['ro', 'en'],
@@ -36,7 +35,7 @@ export function StructuredData() {
         'Chatbot și asistenți AI',
         'Automatizări CRM și lead-uri',
         'Integrări între aplicații',
-      ].map((name) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name, areaServed: 'Suceava' } })),
+      ].map((name) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name, areaServed: 'România' } })),
     },
   }
 

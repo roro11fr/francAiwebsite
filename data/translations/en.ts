@@ -26,11 +26,11 @@ export const en = {
     location: 'Suceava, Romania',
   },
   hero: {
-    badge: 'Websites & AI Automation · Suceava',
+    badge: 'Web & AI Automation Studio',
     headline: 'Websites & AI Automation',
-    headlineAccent: 'for Your Business in Suceava',
+    headlineAccent: 'Built Around Your Business',
     subheadline:
-      'We build modern, fast, Google-optimized websites and AI systems that handle repetitive tasks and connect your tools. We work with businesses in Suceava and across Romania.',
+      'We build modern, fast, Google-optimized websites and AI systems that handle repetitive tasks and connect your tools. We work remotely with businesses across Romania and abroad.',
     supporting: "We don't replace your people. We replace the repetitive work holding them back.",
     cta1: 'Get Free Audit',
     cta2: 'See Examples',
@@ -226,8 +226,8 @@ export const en = {
         a: 'Both. You can order just a website, just an automation, or a complete package: a new site connected directly to automations, with forms that go into your CRM, automatic bookings, and AI replies to messages.',
       },
       {
-        q: 'Do you work with businesses in Suceava?',
-        a: 'Yes. FrancAI is based in Suceava and works with local businesses in Suceava county, as well as online with businesses across Romania.',
+        q: 'Does it matter where my business is located?',
+        a: 'No. We work remotely with businesses across Romania and abroad, over video calls and email, in Romanian or English.',
       },
       {
         q: 'How much does a website cost?',
@@ -288,7 +288,7 @@ export const en = {
   },
   footer: {
     description:
-      'Websites and AI automation in Suceava. Fast websites and custom systems that handle repetitive work.',
+      'Websites and AI automation for businesses in Romania and abroad. Fast websites and custom systems that handle repetitive work.',
     links: {
       services: 'Services',
       work: 'Examples',

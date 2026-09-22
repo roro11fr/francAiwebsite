@@ -226,7 +226,7 @@ export function HeroCinematic() {
               >
                 <img
                   src="/assets/rsz_poza-cutout_cleanup.png"
-                  alt="Fondatorul FrancAI — creare website-uri și automatizări AI în Suceava"
+                  alt="Fondatorul FrancAI — creare website-uri și automatizări AI"
                   draggable={false}
                   className="absolute inset-0 w-full h-full select-none"
                   style={{ filter: "drop-shadow(0 0 32px rgba(109,40,217,0.16))" }}
@@ -296,7 +296,7 @@ export function HeroCinematic() {
             >
               <img
                 src="/assets/rsz_poza-cutout_cleanup.png"
-                alt="Fondatorul FrancAI — creare website-uri și automatizări AI în Suceava"
+                alt="Fondatorul FrancAI — creare website-uri și automatizări AI"
                 draggable={false}
                 style={{
                   position: "absolute",
