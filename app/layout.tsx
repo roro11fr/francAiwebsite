@@ -3,6 +3,8 @@ import { Bricolage_Grotesque, Plus_Jakarta_Sans, Manrope, DM_Sans } from 'next/f
 import './globals.css'
 import { LanguageProvider } from '@/context/LanguageContext'
 import { StructuredData } from '@/components/StructuredData'
+import { CookieConsent } from '@/components/CookieConsent'
+import { Analytics } from '@vercel/analytics/next'
 import { SITE, SITE_URL } from '@/lib/site'
 
 const bricolage = Bricolage_Grotesque({
@@ -77,7 +79,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ro" className={`${bricolage.variable} ${jakarta.variable} ${manrope.variable} ${dmSans.variable}`}>
       <body className="font-body antialiased bg-cream-50 text-ink-900">
         <StructuredData />
-        <LanguageProvider>{children}</LanguageProvider>
+        <LanguageProvider>
+          {children}
+          <CookieConsent />
+        </LanguageProvider>
+        <Analytics />
       </body>
     </html>
   )

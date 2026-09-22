@@ -69,6 +69,9 @@ export function Footer() {
             >
               francaiagency@gmail.com
             </a>
+            <a href="/confidentialitate" className="text-zinc-600 hover:text-violet-400 text-xs font-ui transition-colors">
+              Politica de confidențialitate
+            </a>
             <p className="text-zinc-800 text-xs font-ui">© {year} {t.footer.copyright}</p>
           </div>
         </div>

@@ -27,6 +27,13 @@ export const ro: Translations = {
     after: 'După',
     location: 'Suceava, România',
   },
+  cookies: {
+    title: 'Cookie-uri',
+    text: 'Folosim cookie-uri de analiză ca să înțelegem cum este folosit site-ul. Poți refuza, iar site-ul funcționează exact la fel.',
+    link: 'Politica de confidențialitate',
+    accept: 'Accept',
+    decline: 'Refuz',
+  },
   hero: {
     badge: 'Studio Web & Automatizări AI',
     headline: 'Creare site-uri și automatizări AI',

@@ -25,6 +25,13 @@ export const en = {
     after: 'After',
     location: 'Suceava, Romania',
   },
+  cookies: {
+    title: 'Cookies',
+    text: 'We use analytics cookies to understand how the site is used. You can decline and the site works exactly the same.',
+    link: 'Privacy policy',
+    accept: 'Accept',
+    decline: 'Decline',
+  },
   hero: {
     badge: 'Web & AI Automation Studio',
     headline: 'Websites & AI Automation',
