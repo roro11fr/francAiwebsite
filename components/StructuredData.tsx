@@ -24,6 +24,7 @@ export function StructuredData() {
       { '@type': 'AdministrativeArea', name: 'Județul Suceava' },
       { '@type': 'Country', name: 'România' },
     ],
+    sameAs: [SITE.instagram],
     knowsLanguage: ['ro', 'en'],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',

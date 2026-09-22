@@ -5,6 +5,7 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3
 export const SITE = {
   name: 'FrancAI',
   email: 'francaiagency@gmail.com',
+  instagram: 'https://www.instagram.com/francai.ro/',
   city: 'Suceava',
   region: 'Județul Suceava',
   country: 'RO',

@@ -382,10 +382,15 @@ export function HeroCinematic() {
             FrancAI — {t.ui.tagline}
           </p>
           <div className="flex gap-5">
-            {["LinkedIn", "Twitter", "Email"].map((l) => (
+            {[
+              { label: "Instagram", href: "https://www.instagram.com/francai.ro/" },
+              { label: "Email", href: "mailto:francaiagency@gmail.com" },
+            ].map(({ label, href }) => (
               <a
-                key={l}
-                href={l === "Email" ? "mailto:francaiagency@gmail.com" : "#"}
+                key={label}
+                href={href}
+                target={href.startsWith("http") ? "_blank" : undefined}
+                rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
                 style={{
                   color: "rgba(196,132,252,0.22)",
                   fontSize: 10,
@@ -394,7 +399,7 @@ export function HeroCinematic() {
                 }}
                 className="hover:text-violet-300/60 transition-colors"
               >
-                {l}
+                {label}
               </a>
             ))}
           </div>
