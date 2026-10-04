@@ -112,15 +112,15 @@ export const en = {
   founder: {
     label: "Who's behind it",
     title: "I'm Robert.",
-    titleAccent: 'I build the systems that do the repetitive work for you.',
-    text: "FrancAI isn't an agency with dozens of people and account managers. It's my studio. You talk directly to the person building your website and automations: I listen to the problem and I build the solution.",
+    titleAccent: 'Founder of FrancAI.',
+    text: 'I founded FrancAI so businesses get a technical partner they can trust, not just a vendor. Throughout the project you talk directly to me, with no middlemen: I understand what you need, explain everything in plain language and make sure you get exactly what we agreed on.',
     visionLabel: 'My vision',
     vision:
       'Small businesses deserve the same systems that only large companies used to have: a website that brings customers, instant replies to messages and processes that run on their own. Without a corporate budget and without jargon.',
     principles: [
       {
         title: 'Concrete, not vague',
-        description: 'Before you pay anything, I tell you exactly what I will build, what it does and what it does not do.',
+        description: 'Before you pay anything, you know exactly what we will build, what it does and what it does not do.',
       },
       {
         title: 'Humans stay in control',
@@ -128,7 +128,7 @@ export const en = {
       },
       {
         title: 'On your tools',
-        description: "I connect to what you already use (email, forms, Google Sheets, CRM). You don't have to change everything.",
+        description: 'We start from what you already use (email, forms, Google Sheets, CRM), without changing everything.',
       },
     ],
     cta: "Let's talk",
@@ -302,7 +302,7 @@ export const en = {
     items: [
       {
         q: 'Who will I actually work with?',
-        a: "Directly with me, Robert Franciuc, founder of FrancAI. No account managers or middlemen: the person you talk to is the person who builds.",
+        a: "With me, Robert Franciuc, founder of FrancAI. I'm your point of contact for the whole project, with no account managers or middlemen.",
       },
       {
         q: 'Do you build websites and automations together or separately?',

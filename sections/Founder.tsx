@@ -20,12 +20,12 @@ export function Founder() {
 
           {/* Portrait */}
           <div className={`animate-enter ${isVisible ? 'is-visible' : ''} lg:col-span-5`}>
-            <figure className="relative rounded-3xl border border-white/8 bg-gradient-to-b from-violet-500/[0.06] to-transparent overflow-hidden">
+            <figure className="relative aspect-square max-w-md mx-auto lg:max-w-none rounded-3xl border border-white/8 overflow-hidden">
               <img
                 src={SITE.founderImage}
                 alt={`${SITE.founder}, fondatorul FrancAI`}
                 loading="lazy"
-                className="w-full h-auto select-none"
+                className="absolute inset-0 w-full h-full object-cover object-top select-none"
                 draggable={false}
               />
               <figcaption className="absolute left-0 right-0 bottom-0 p-5 bg-gradient-to-t from-[#07071a] via-[#07071a]/80 to-transparent">

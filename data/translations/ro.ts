@@ -114,15 +114,15 @@ export const ro: Translations = {
   founder: {
     label: 'Cine e în spate',
     title: 'Sunt Robert.',
-    titleAccent: 'Construiesc sistemele care fac munca repetitivă în locul tău.',
-    text: 'FrancAI nu e o agenție cu zeci de oameni și account manageri. E studioul meu. Vorbești direct cu omul care îți construiește site-ul și automatizările: eu ascult problema și eu construiesc soluția.',
+    titleAccent: 'Fondatorul FrancAI.',
+    text: 'Am fondat FrancAI ca firmele să aibă un partener tehnic de încredere, nu doar un furnizor. Pe tot proiectul vorbești direct cu mine, fără intermediari: înțeleg ce ai nevoie, îți explic totul pe limba ta și mă asigur că primești exact ce am stabilit.',
     visionLabel: 'Viziunea mea',
     vision:
       'Firmele mici din România merită aceleași sisteme pe care până acum le aveau doar companiile mari: un site care aduce clienți, răspunsuri instant la mesaje și procese care merg singure. Fără buget de corporație și fără jargon.',
     principles: [
       {
         title: 'Concret, nu vag',
-        description: 'Înainte să plătești ceva, îți spun exact ce construiesc, ce face și ce nu face.',
+        description: 'Înainte să plătești ceva, știi exact ce construim, ce face și ce nu face.',
       },
       {
         title: 'Omul rămâne în control',
@@ -130,7 +130,7 @@ export const ro: Translations = {
       },
       {
         title: 'Pe tool-urile tale',
-        description: 'Mă conectez la ce folosești deja (email, formulare, Google Sheets, CRM), nu te oblig să schimbi tot.',
+        description: 'Pornim de la ce folosești deja (email, formulare, Google Sheets, CRM), fără să schimbi tot.',
       },
     ],
     cta: 'Hai să vorbim',
@@ -305,7 +305,7 @@ export const ro: Translations = {
     items: [
       {
         q: 'Cu cine lucrez concret?',
-        a: 'Direct cu mine, Robert Franciuc, fondatorul FrancAI. Nu treci prin account manageri sau intermediari: omul cu care vorbești e omul care construiește.',
+        a: 'Cu mine, Robert Franciuc, fondatorul FrancAI. Sunt omul tău de contact pe tot proiectul, fără account manageri sau intermediari.',
       },
       {
         q: 'Faceți website-uri și automatizări împreună sau separat?',
