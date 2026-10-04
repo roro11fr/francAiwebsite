@@ -5,6 +5,8 @@ import { ArrowRight, CheckCircle, Clock, Shield } from 'lucide-react'
 import { useLanguage } from '@/context/LanguageContext'
 import { useInView } from '@/hooks/useInView'
 import { SectionLabel } from '@/components/ui/SectionWrapper'
+import { InstagramIcon } from '@/components/InstagramIcon'
+import { SITE } from '@/lib/site'
 
 interface FormState {
   name: string
@@ -185,6 +187,21 @@ export function Contact() {
                 <p className="text-zinc-600 text-xs font-ui">{t.ui.noObligations}</p>
               </div>
             </div>
+
+            <a
+              href={SITE.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-start gap-4 p-5 rounded-xl bg-white/[0.03] border border-white/8 hover:border-violet-500/30 hover:bg-violet-500/[0.05] transition-all"
+            >
+              <div className="w-9 h-9 rounded-lg bg-violet-500/15 border border-violet-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <InstagramIcon size={15} className="text-violet-400" />
+              </div>
+              <div>
+                <p className="font-ui font-semibold text-white text-sm mb-0.5 group-hover:text-violet-300 transition-colors">@francai.ro</p>
+                <p className="text-zinc-600 text-xs font-ui">{t.ui.instagramText}</p>
+              </div>
+            </a>
           </div>
 
         </div>

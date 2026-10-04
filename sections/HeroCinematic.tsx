@@ -100,20 +100,7 @@ export function HeroCinematic() {
           {/* LEFT */}
           <div className="flex flex-col justify-center pt-14 pb-20 lg:py-20 pr-0 lg:pr-10">
 
-            {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: -8 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="flex items-center gap-2 mb-6"
-            >
-              <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse" />
-              <span className="text-[11px] text-violet-300/60 uppercase tracking-[0.22em] font-medium">
-                {t.hero.badge}
-              </span>
-            </motion.div>
-
-            {/* Headline */}
+            {/* Headline — the small keyword line is part of the H1 for SEO, the vision is the visual headline */}
             <motion.h1
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
@@ -126,8 +113,12 @@ export function HeroCinematic() {
                 letterSpacing: "-0.04em",
               }}
             >
-              {t.hero.headline}
-              <br />
+              <span className="flex items-center gap-2 mb-6" style={{ letterSpacing: 0, lineHeight: 1.5, fontFamily: "var(--font-dmsans), sans-serif" }}>
+                <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse flex-shrink-0" />
+                <span className="text-[11px] text-violet-300/70 uppercase font-medium tracking-[0.2em]">{t.hero.badge}</span>
+              </span>
+              {t.hero.headline}{" "}
+              <br className="hidden sm:block" />
               <span
                 style={{
                   background:
@@ -145,7 +136,7 @@ export function HeroCinematic() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.35 }}
-              className="text-violet-200/45 text-base md:text-lg leading-relaxed max-w-md mb-5"
+              className="text-violet-200/65 text-base md:text-lg leading-relaxed max-w-md mb-5"
             >
               {t.hero.subheadline}
             </motion.p>
@@ -155,7 +146,7 @@ export function HeroCinematic() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.48 }}
-              className="text-violet-300/60 text-sm font-medium leading-relaxed max-w-md mb-7 italic"
+              className="text-violet-200/80 text-sm font-medium leading-relaxed max-w-md mb-7 border-l-2 border-violet-500/60 pl-3"
             >
               {t.hero.supporting}
             </motion.p>
@@ -200,6 +191,23 @@ export function HeroCinematic() {
               </a>
             </motion.div>
 
+            {/* What I build — three concrete offers */}
+            <motion.ul
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.7 }}
+              className="flex flex-col gap-2"
+            >
+              {t.hero.badges.map((b) => (
+                <li key={b} className="flex items-center gap-2 text-violet-200/60 text-sm">
+                  <svg className="w-3.5 h-3.5 text-violet-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                  </svg>
+                  {b}
+                </li>
+              ))}
+            </motion.ul>
+
             {/* Portrait + 3D core — mobile/tablet (desktop version is the right column) */}
             <motion.div
               className="lg:hidden relative mx-auto w-full max-w-[520px] mt-10"
@@ -226,7 +234,7 @@ export function HeroCinematic() {
               >
                 <img
                   src="/assets/rsz_poza-cutout_cleanup.png"
-                  alt="Fondatorul FrancAI — creare website-uri și automatizări AI"
+                  alt="Robert Franciuc, fondatorul FrancAI — creare site-uri și automatizări AI"
                   draggable={false}
                   className="absolute inset-0 w-full h-full select-none"
                   style={{ filter: "drop-shadow(0 0 32px rgba(109,40,217,0.16))" }}
@@ -296,7 +304,7 @@ export function HeroCinematic() {
             >
               <img
                 src="/assets/rsz_poza-cutout_cleanup.png"
-                alt="Fondatorul FrancAI — creare website-uri și automatizări AI"
+                alt="Robert Franciuc, fondatorul FrancAI — creare site-uri și automatizări AI"
                 draggable={false}
                 style={{
                   position: "absolute",

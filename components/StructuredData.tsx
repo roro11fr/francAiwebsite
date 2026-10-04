@@ -25,6 +25,8 @@ export function StructuredData() {
     ],
     sameAs: [SITE.instagram],
     knowsLanguage: ['ro', 'en'],
+    founder: { '@id': `${SITE_URL}/#founder` },
+    slogan: `${ro.hero.headline} ${ro.hero.headlineAccent}`,
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Servicii FrancAI',
@@ -39,6 +41,16 @@ export function StructuredData() {
     },
   }
 
+  const founder = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': `${SITE_URL}/#founder`,
+    name: SITE.founder,
+    jobTitle: 'Fondator',
+    image: `${SITE_URL}${SITE.founderImage}`,
+    worksFor: { '@id': `${SITE_URL}/#business` },
+  }
+
   const website = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
@@ -49,6 +61,16 @@ export function StructuredData() {
     publisher: { '@id': `${SITE_URL}/#business` },
   }
 
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify([business, founder, website]) }}
+    />
+  )
+}
+
+// Home page FAQ only — service pages carry their own FAQPage schema.
+export function HomeFaqSchema() {
   const faq = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -59,10 +81,22 @@ export function StructuredData() {
     })),
   }
 
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify([business, website, faq]) }}
-    />
-  )
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faq) }} />
+}
+
+// Testimonial videos — lets Google index them as videos of FrancAI clients.
+export function TestimonialVideoSchema() {
+  const videos = ro.testimonials.items.map((item) => ({
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: `Testimonial ${item.name} despre FrancAI`,
+    description: `${item.name} (${item.place}) despre colaborarea cu FrancAI. ${item.project}`,
+    thumbnailUrl: `${SITE_URL}/testimoniale/${item.slug}.jpg`,
+    contentUrl: `${SITE_URL}/testimoniale/${item.slug}.mp4`,
+    uploadDate: '2026-10-04',
+    inLanguage: 'ro',
+    publisher: { '@id': `${SITE_URL}/#business` },
+  }))
+
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videos) }} />
 }

@@ -4,8 +4,9 @@ export const en = {
     work: 'Examples',
     process: 'Process',
     about: 'About',
+    clients: 'Clients',
     contact: 'Contact',
-    cta: 'Get Free Audit',
+    cta: 'Free Audit',
   },
   ui: {
     problem: 'Problem',
@@ -24,6 +25,9 @@ export const en = {
     before: 'Before',
     after: 'After',
     location: 'Suceava, Romania',
+    founderRole: 'Founder, FrancAI',
+    instagram: 'Follow us on Instagram',
+    instagramText: 'New projects and behind the scenes',
   },
   cookies: {
     title: 'Cookies',
@@ -33,19 +37,18 @@ export const en = {
     decline: 'Decline',
   },
   hero: {
-    badge: 'Web & AI Automation Studio',
-    headline: 'Websites & AI Automation',
-    headlineAccent: 'Built Around Your Business',
+    badge: 'Websites & AI automation for businesses',
+    headline: "Your business doesn't have a growth problem.",
+    headlineAccent: 'It has a systems problem.',
     subheadline:
-      'We build modern, fast, Google-optimized websites and AI systems that handle repetitive tasks and connect your tools. We work remotely with businesses across Romania and abroad.',
-    supporting: "We don't replace your people. We replace the repetitive work holding them back.",
+      'I build the website that brings you customers and the AI automations that serve them: replies to messages, bookings, follow-ups and reports that run on their own. So your team can work on what matters.',
+    supporting: "I'm Robert Franciuc, founder of FrancAI. You work directly with me, from the first call to launch.",
     cta1: 'Get Free Audit',
-    cta2: 'See Examples',
+    cta2: 'What I Build',
     badges: [
-      'Custom-built workflows',
-      'Built around your tools',
-      'Human handoff when needed',
-      'No generic templates',
+      'Business websites & landing pages',
+      'AI chatbots for messages & bookings',
+      'CRM, lead & reporting automation',
     ],
   },
   services: {
@@ -106,44 +109,113 @@ export const en = {
       },
     ],
   },
+  founder: {
+    label: "Who's behind it",
+    title: "I'm Robert.",
+    titleAccent: 'I build the systems that do the repetitive work for you.',
+    text: "FrancAI isn't an agency with dozens of people and account managers. It's my studio. You talk directly to the person building your website and automations: I listen to the problem and I build the solution.",
+    visionLabel: 'My vision',
+    vision:
+      'Small businesses deserve the same systems that only large companies used to have: a website that brings customers, instant replies to messages and processes that run on their own. Without a corporate budget and without jargon.',
+    principles: [
+      {
+        title: 'Concrete, not vague',
+        description: 'Before you pay anything, I tell you exactly what I will build, what it does and what it does not do.',
+      },
+      {
+        title: 'Humans stay in control',
+        description: 'AI takes the repetitive work. Important decisions and difficult customers still come to you.',
+      },
+      {
+        title: 'On your tools',
+        description: "I connect to what you already use (email, forms, Google Sheets, CRM). You don't have to change everything.",
+      },
+    ],
+    cta: "Let's talk",
+  },
+  testimonials: {
+    label: 'Clients',
+    title: "Don't take my word for it.",
+    titleAccent: 'Hear it from them.',
+    subtitle: 'Real people, real projects. Press play to hear them directly (in Romanian).',
+    play: 'Play testimonial',
+    visit: 'Visit website',
+    items: [
+      {
+        slug: 'salon-eveline',
+        name: 'Salon Eveline',
+        place: 'Vatra Dornei · hair & make-up salon',
+        project: 'Website with every service and price, a salon gallery and 3-step online booking (service, day, time).',
+        url: 'https://salon-eveline.ro',
+        urlLabel: 'salon-eveline.ro',
+      },
+      {
+        slug: 'pislaru-frizerie',
+        name: 'Pîslaru Frizerie',
+        place: 'Milișăuți · barbershop & hair salon',
+        project: 'Website with clear prices for 15 services, a salon gallery, opening hours, map and 3-step online booking.',
+        url: 'https://pislaru-frizerie.ro',
+        urlLabel: 'pislaru-frizerie.ro',
+      },
+      {
+        slug: 'denismar-tra',
+        name: 'Denis Mihalescu · denismartra',
+        place: 'Marginea, Bucovina · content creator',
+        project: 'Portfolio website for promo videos: top-viewed clips, services, workflow and a quote request form.',
+        url: 'https://denismar-tra.ro',
+        urlLabel: 'denismar-tra.ro',
+      },
+      {
+        slug: 'fysmedia',
+        name: 'FYS Media',
+        place: 'Suceava · wedding & event photo-video',
+        project: 'Website for a wedding photo and video team: event galleries, packages with prices, a 4-step process and a quote request form.',
+        url: 'https://fysmedia.ro',
+        urlLabel: 'fysmedia.ro',
+      },
+    ],
+  },
   exampleSystems: {
-    label: 'Example Systems',
-    title: 'Example Systems',
-    titleAccent: 'We Can Build',
-    subtitle:
-      'Examples of custom automation systems we can design around your tools, workflow, and business goals.',
+    label: 'Examples',
+    title: 'What it looks like',
+    titleAccent: 'in practice',
+    subtitle: 'Real scenarios I can build for you, adapted to your tools and the way your business works.',
     items: [
       {
         icon: 'MessageSquare',
-        title: 'AI Inbox Assistant',
+        title: 'Late-night messages',
         description:
-          'Handles repetitive customer questions, collects details, and escalates only what needs a human.',
-      },
-      {
-        icon: 'Filter',
-        title: 'Lead Qualification System',
-        description:
-          'Asks the right questions, filters serious leads, updates your CRM, and sends follow-ups automatically.',
-      },
-      {
-        icon: 'BarChart2',
-        title: 'Automated Reporting System',
-        description: 'Turns raw data into weekly or monthly reports without manual copy-paste.',
+          'A customer writes at 11 PM: "Do you have a slot tomorrow?". The AI assistant replies instantly, suggests free times and leaves the request ready for you to confirm in the morning.',
       },
       {
         icon: 'Calendar',
-        title: 'Booking & Scheduling Automation',
-        description: 'Collects requests, checks availability, sends confirmations, and reduces missed bookings.',
+        title: 'Bookings without phone calls',
+        description:
+          'The customer picks a time on your site, gets an email confirmation and a reminder the day before. You see everything in your calendar without a single call.',
       },
       {
-        icon: 'BookOpen',
-        title: 'Internal Knowledge Assistant',
-        description: "Lets your team ask questions based on your documents, SOPs, FAQs, and internal knowledge.",
+        icon: 'Filter',
+        title: 'Leads that never slip',
+        description:
+          'Someone fills in your quote form. The data goes straight into your CRM, you get notified, and the customer receives a follow-up if they go quiet for 2 days.',
+      },
+      {
+        icon: 'BarChart2',
+        title: 'The Monday morning report',
+        description:
+          'Every Monday you get an email summary: how many requests came in, from where, and how many became customers. Nobody copy-pastes into Excel anymore.',
       },
       {
         icon: 'FileText',
-        title: 'Document & Data Processing Agent',
-        description: 'Reads, extracts, and routes information from forms, PDFs, emails, and spreadsheets.',
+        title: 'Documents read automatically',
+        description:
+          'Invoices and PDFs arriving by email are read by AI, the key data is extracted and placed into the right spreadsheet or app.',
+      },
+      {
+        icon: 'BookOpen',
+        title: 'Answers for your team',
+        description:
+          'A new hire asks "How do we handle returns?". The internal assistant answers from your company procedures, without interrupting you.',
       },
     ],
   },
@@ -153,56 +225,56 @@ export const en = {
     titleAccent: 'FrancAI',
     before: {
       title: 'Before',
-      text: 'Repetitive questions, manual updates, copy-paste work, follow-ups, and reports built by hand.',
+      text: 'You answer the same questions ten times a day, move data by hand between apps, forget follow-ups and build reports in Excel.',
     },
     after: {
       title: 'After',
-      text: 'AI systems handle repetitive work, update tools, send follow-ups, create reports, and notify your team when human input is needed.',
+      text: 'Repetitive questions get answered automatically, data moves on its own, follow-ups go out on time and reports land in your inbox. You step in only where it matters.',
     },
   },
   audit: {
-    label: 'Free Automation Audit',
-    title: 'Your Free',
-    titleAccent: 'Automation Audit',
-    subtitle: "Not sure what can be automated? That is exactly what the audit is for.",
+    label: 'Free Audit',
+    title: 'Find out what you',
+    titleAccent: 'can automate',
+    subtitle: "Not sure where to start? That's what the audit is for. It takes one call and commits you to nothing.",
     items: [
-      'We map the repetitive work in your business',
-      'We identify which tasks can realistically be automated',
-      'We recommend the best first automation to build',
-      'You get a clear plan before committing to anything',
+      'You show me what you do daily and what drains your time',
+      'I identify what can realistically be automated, and what cannot',
+      'I recommend the first automation with the biggest impact',
+      'You get a clear written plan before deciding anything',
     ],
-    cta: 'Get My Free Automation Audit',
+    cta: 'Get My Free Audit',
   },
   process: {
-    label: 'How It Works',
-    title: 'How It',
-    titleAccent: 'Works',
-    subtitle: 'From discovery to a deployed, working system.',
+    label: 'How We Work',
+    title: 'How We',
+    titleAccent: 'Work',
+    subtitle: 'From the first call to a system running in your business.',
     steps: [
       {
         number: '01',
-        title: 'Discover',
-        description: 'We understand your business, tools, and the repetitive work slowing your team down.',
+        title: 'Talk',
+        description: 'A call where you tell me about your business, your tools and what drains your time.',
       },
       {
         number: '02',
-        title: 'Map',
-        description: 'We turn your current workflow into a clear, actionable automation plan.',
+        title: 'Plan',
+        description: 'You get a written plan: what I build, how it works and what it costs.',
       },
       {
         number: '03',
         title: 'Build',
-        description: 'We create a custom AI-powered system around your exact process.',
+        description: 'I build the website or automation around your exact process and show you progress.',
       },
       {
         number: '04',
         title: 'Test',
-        description: 'We refine the automation and add safeguards to make sure it works reliably.',
+        description: 'We test it together on real situations and I add safety rules.',
       },
       {
         number: '05',
         title: 'Launch',
-        description: 'We deploy, monitor, and improve the system based on real usage.',
+        description: 'I put it live and show you how to use it.',
       },
     ],
   },
@@ -229,73 +301,73 @@ export const en = {
     titleAccent: 'Questions',
     items: [
       {
+        q: 'Who will I actually work with?',
+        a: "Directly with me, Robert Franciuc, founder of FrancAI. No account managers or middlemen: the person you talk to is the person who builds.",
+      },
+      {
         q: 'Do you build websites and automations together or separately?',
-        a: 'Both. You can order just a website, just an automation, or a complete package: a new site connected directly to automations, with forms that go into your CRM, automatic bookings, and AI replies to messages.',
+        a: 'Both. You can order just a website, just an automation, or a complete package: a new site connected directly to automations, with forms that go into your CRM, automatic bookings and AI replies to messages.',
       },
       {
         q: 'Does it matter where my business is located?',
-        a: 'No. We work remotely with businesses across Romania and abroad, over video calls and email, in Romanian or English.',
+        a: 'No. I work remotely with businesses across Romania and abroad, over video calls and email, in Romanian or English.',
       },
       {
         q: 'How much does a website cost?',
-        a: 'It depends on the number of pages, features, and integrations. After a short conversation you get a clear quote tailored to your business.',
+        a: 'It depends on the number of pages, features and integrations. After a short call you get a fixed written quote with no hidden costs.',
+      },
+      {
+        q: 'How much does an automation or AI chatbot cost?',
+        a: 'It depends on how complex the process is and which tools are involved. The free audit shows me exactly what you need, and after it you get a clear price.',
       },
       {
         q: 'Do I need to know exactly what I want to automate?',
-        a: 'No. You only need to tell us what feels repetitive, slow, or manual. We help identify what can be automated.',
+        a: 'No. Just tell me what feels repetitive, slow or manual. I identify what can be automated and what is worth doing first.',
       },
       {
-        q: 'Is this only for one type of business?',
-        a: 'No. FrancAI is built for any business with repetitive workflows. We focus on the process, not just the industry.',
-      },
-      {
-        q: 'Do you use generic templates?',
-        a: 'No. We can use proven building blocks, but every system is designed around your tools, workflow, and goals.',
-      },
-      {
-        q: 'Can AI talk directly to customers?',
-        a: 'Yes, where it makes sense. We also add approval steps, human handoff, and safety rules so the system only automates what should be automated.',
+        q: 'Can AI talk directly to my customers?',
+        a: 'Yes, where it makes sense. I add approval steps, human handoff and safety rules so the AI only answers what it knows for sure.',
       },
       {
         q: 'What tools can you connect?',
-        a: 'We can connect many common tools through APIs, n8n, CRMs, forms, email, spreadsheets, databases, messaging tools, and custom integrations.',
+        a: 'Most common tools: email, forms, Google Sheets, CRMs, calendars, databases and messaging apps, through APIs, n8n or custom integrations.',
       },
       {
-        q: 'How much does an automation system cost?',
-        a: 'It depends on the workflow complexity, tools involved, and level of AI needed. The free audit helps us understand the scope and recommend the best first automation.',
+        q: 'Do you use generic templates?',
+        a: 'No. I use proven building blocks, but every website and every system is built around your tools, process and goals.',
       },
       {
         q: 'What happens after the audit?',
-        a: 'You receive a clear automation plan. If it makes sense, we can then build the first system for you.',
+        a: "You get a clear plan. If it makes sense for you, I build the first system. If not, you keep the plan, free.",
       },
     ],
   },
   contact: {
-    label: 'Get Started',
-    title: "Let's Find What",
-    titleAccent: 'You Can Automate',
+    label: 'Contact',
+    title: 'Tell me what',
+    titleAccent: 'drains your day',
     subtitle:
-      "Tell us what your team does manually. We'll review your workflow and show you where automation can save time.",
+      "Write down what you do manually or repeatedly. I'll look at your process and tell you honestly what can be automated and what can't.",
     form: {
       name: 'Full Name',
       email: 'Email Address',
       company: 'Company or Brand (optional)',
       website: 'Website or Social Profile (optional)',
       message:
-        'Tell us what your team does manually or repeatedly. Examples: answering messages, updating CRM, creating reports, moving data, processing documents, booking calls, or sending follow-ups.',
-      submit: 'Get My Free Automation Audit',
+        'What do you do manually or repeatedly? Examples: answering messages, bookings, updating your CRM, reports, moving data, processing documents or follow-ups. Or: I need a new website.',
+      submit: 'Get My Free Audit',
       submitting: 'Sending...',
-      success: "Message sent! We'll get back to you within 24 hours.",
+      success: "Message sent! I'll reply personally within 24 hours.",
     },
     cta: {
       title: 'No commitment required.',
-      subtitle: 'Tell us what feels repetitive. We will review your workflow and tell you what can be automated.',
-      button: 'Get My Free Automation Audit',
+      subtitle: 'You tell me what feels repetitive, I tell you what can be automated. The decision stays yours.',
+      button: 'Get My Free Audit',
     },
   },
   footer: {
     description:
-      'Websites and AI automation for businesses in Romania and abroad. Fast websites and custom systems that handle repetitive work.',
+      'Websites and AI automation for businesses in Romania and abroad. Websites that bring customers and systems that handle repetitive work.',
     links: {
       services: 'Services',
       work: 'Examples',

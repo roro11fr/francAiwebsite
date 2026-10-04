@@ -92,17 +92,25 @@ export function Navbar() {
   }, [mobileOpen])
 
   const links = [
-    { label: t.nav.services, href: '#services' },
-    { label: t.nav.work, href: '#examples' },
-    { label: t.nav.process, href: '#process' },
+    { label: t.nav.services, href: '/#services' },
+    { label: t.nav.clients, href: '/#testimoniale' },
+    { label: t.nav.work, href: '/#examples' },
+    { label: t.nav.about, href: '/#about' },
+    { label: t.nav.process, href: '/#process' },
   ]
 
-  const handleNav = (href: string) => {
+  const closeMenu = () => {
     setMobileOpen(false)
-    // Unlock scrolling right away; the effect would run too late for scrollIntoView
+    // Unlock scrolling right away; the effect would run too late for the anchor jump
     document.body.style.overflow = ''
-    const el = document.querySelector(href)
+  }
+
+  // Sections live on the home page; from a service page, navigate there instead
+  const handleNav = (href: string) => {
+    closeMenu()
+    const el = document.querySelector(href.replace(/^\//, ''))
     if (el) el.scrollIntoView({ behavior: 'smooth' })
+    else window.location.href = href
   }
 
   return (
@@ -113,8 +121,13 @@ export function Navbar() {
 
           {/* Logo */}
           <a
-            href="#"
-            onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
+            href="/"
+            aria-label="FrancAI"
+            onClick={(e) => {
+              if (window.location.pathname !== '/') return
+              e.preventDefault()
+              window.scrollTo({ top: 0, behavior: 'smooth' })
+            }}
             className="flex-shrink-0 group outline-none focus:outline-none focus-visible:outline-none"
           >
             <NavbarLogo />
@@ -123,13 +136,13 @@ export function Navbar() {
           {/* Desktop nav — centered */}
           <nav className="hidden lg:flex items-center gap-1 absolute left-1/2 -translate-x-1/2">
             {links.map((link) => (
-              <button
+              <a
                 key={link.href}
-                onClick={() => handleNav(link.href)}
+                href={link.href}
                 className="px-4 py-2 text-sm font-ui font-medium text-zinc-400 hover:text-white rounded-lg hover:bg-white/6 transition-all duration-200"
               >
                 {link.label}
-              </button>
+              </a>
             ))}
           </nav>
 
@@ -148,7 +161,7 @@ export function Navbar() {
                 </button>
               ))}
             </div>
-            <Button variant="primary" size="sm" onClick={() => handleNav('#contact')}>
+            <Button variant="primary" size="sm" onClick={() => handleNav('/#contact')}>
               {t.nav.cta}
             </Button>
           </div>
@@ -175,15 +188,15 @@ export function Navbar() {
       <div className={`fixed inset-0 z-40 lg:hidden transition-all duration-300 ${mobileOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
         <div className="absolute inset-0 bg-black/60" onClick={() => setMobileOpen(false)} />
         <div className={`absolute top-0 right-0 h-full w-72 bg-ink-900 border-l border-white/10 p-8 pt-24 flex flex-col gap-1 transition-transform duration-300 ${mobileOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-          {[...links, { label: t.nav.contact, href: '#contact' }].map((link) => (
-            <button key={link.href} onClick={() => handleNav(link.href)}
+          {[...links, { label: t.nav.contact, href: '/#contact' }].map((link) => (
+            <a key={link.href} href={link.href} onClick={closeMenu}
               className="text-left px-4 py-3.5 text-base font-ui font-medium text-zinc-400 hover:text-white hover:bg-white/6 rounded-lg transition-all duration-200"
             >
               {link.label}
-            </button>
+            </a>
           ))}
           <div className="mt-4 pt-4 border-t border-white/8">
-            <Button variant="primary" size="md" className="w-full" onClick={() => handleNav('#contact')}>
+            <Button variant="primary" size="md" className="w-full" onClick={() => handleNav('/#contact')}>
               {t.nav.cta}
             </Button>
           </div>

@@ -6,6 +6,7 @@ export const ro: Translations = {
     work: 'Exemple',
     process: 'Proces',
     about: 'Despre',
+    clients: 'Clienți',
     contact: 'Contact',
     cta: 'Audit gratuit',
   },
@@ -26,6 +27,9 @@ export const ro: Translations = {
     before: 'Înainte',
     after: 'După',
     location: 'Suceava, România',
+    founderRole: 'Fondator FrancAI',
+    instagram: 'Urmărește-ne pe Instagram',
+    instagramText: 'Proiecte noi și culise',
   },
   cookies: {
     title: 'Cookie-uri',
@@ -35,19 +39,18 @@ export const ro: Translations = {
     decline: 'Refuz',
   },
   hero: {
-    badge: 'Studio Web & Automatizări AI',
-    headline: 'Creare site-uri și automatizări AI',
-    headlineAccent: 'construite în jurul afacerii tale',
+    badge: 'Creare site-uri și automatizări AI pentru firme',
+    headline: 'Afacerea ta nu are o problemă de creștere.',
+    headlineAccent: 'Are o problemă de sisteme.',
     subheadline:
-      'Creăm website-uri moderne, rapide și optimizate pentru Google, plus sisteme AI care preiau taskurile repetitive și conectează tool-urile tale. Lucrăm online cu afaceri din toată România și din străinătate.',
-    supporting: 'Nu îți înlocuim oamenii. Înlocuim munca repetitivă care îi ține pe loc.',
+      'Construiesc site-ul care îți aduce clienți și automatizările AI care îi servesc: răspunsuri la mesaje, programări, follow-up-uri și rapoarte făcute singure. Ca echipa ta să lucreze la ce contează.',
+    supporting: 'Sunt Robert Franciuc, fondatorul FrancAI. Lucrezi direct cu mine, de la primul apel până la lansare.',
     cta1: 'Primește audit gratuit',
-    cta2: 'Vezi exemple',
+    cta2: 'Ce construiesc',
     badges: [
-      'Workflow-uri custom',
-      'Construite în jurul tool-urilor tale',
-      'Predare către om când e nevoie',
-      'Fără template-uri generice',
+      'Site-uri de prezentare și landing page-uri',
+      'Chatbot AI pentru mesaje și programări',
+      'Automatizări CRM, lead-uri și rapoarte',
     ],
   },
   services: {
@@ -108,45 +111,114 @@ export const ro: Translations = {
       },
     ],
   },
+  founder: {
+    label: 'Cine e în spate',
+    title: 'Sunt Robert.',
+    titleAccent: 'Construiesc sistemele care fac munca repetitivă în locul tău.',
+    text: 'FrancAI nu e o agenție cu zeci de oameni și account manageri. E studioul meu. Vorbești direct cu omul care îți construiește site-ul și automatizările: eu ascult problema și eu construiesc soluția.',
+    visionLabel: 'Viziunea mea',
+    vision:
+      'Firmele mici din România merită aceleași sisteme pe care până acum le aveau doar companiile mari: un site care aduce clienți, răspunsuri instant la mesaje și procese care merg singure. Fără buget de corporație și fără jargon.',
+    principles: [
+      {
+        title: 'Concret, nu vag',
+        description: 'Înainte să plătești ceva, îți spun exact ce construiesc, ce face și ce nu face.',
+      },
+      {
+        title: 'Omul rămâne în control',
+        description: 'AI-ul preia munca repetitivă. Deciziile importante și clienții dificili ajung tot la tine.',
+      },
+      {
+        title: 'Pe tool-urile tale',
+        description: 'Mă conectez la ce folosești deja (email, formulare, Google Sheets, CRM), nu te oblig să schimbi tot.',
+      },
+    ],
+    cta: 'Hai să vorbim',
+  },
+  testimonials: {
+    label: 'Clienți',
+    title: 'Nu mă crede pe cuvânt.',
+    titleAccent: 'Ascultă‑i pe ei.',
+    subtitle: 'Oameni reali, proiecte reale. Apasă pe video ca să-i auzi direct.',
+    play: 'Pornește testimonialul',
+    visit: 'Vezi site-ul',
+    items: [
+      {
+        slug: 'salon-eveline',
+        name: 'Salon Eveline',
+        place: 'Vatra Dornei · frizerie, coafor, make-up',
+        project: 'Site cu toate serviciile și prețurile, galerie a salonului și programare online în 3 pași (serviciu, zi, oră).',
+        url: 'https://salon-eveline.ro',
+        urlLabel: 'salon-eveline.ro',
+      },
+      {
+        slug: 'pislaru-frizerie',
+        name: 'Pîslaru Frizerie',
+        place: 'Milișăuți · frizerie și coafor',
+        project: 'Site cu prețuri clare pentru 15 servicii, galerie a salonului, program, hartă și programare online în 3 pași.',
+        url: 'https://pislaru-frizerie.ro',
+        urlLabel: 'pislaru-frizerie.ro',
+      },
+      {
+        slug: 'denismar-tra',
+        name: 'Denis Mihalescu · denismartra',
+        place: 'Marginea, Bucovina · creator de conținut',
+        project: 'Site portofoliu pentru clipuri de promovare: cele mai vizionate videouri, servicii, proces de lucru și formular de cerere de ofertă.',
+        url: 'https://denismar-tra.ro',
+        urlLabel: 'denismar-tra.ro',
+      },
+      {
+        slug: 'fysmedia',
+        name: 'FYS Media',
+        place: 'Suceava · foto-video nunți și evenimente',
+        project: 'Site pentru o echipă de fotografie și video de nuntă: galerie pe evenimente, pachete cu prețuri, proces în 4 pași și formular de cerere de ofertă.',
+        url: 'https://fysmedia.ro',
+        urlLabel: 'fysmedia.ro',
+      },
+    ],
+  },
   exampleSystems: {
-    label: 'Exemple de sisteme',
-    title: 'Exemple de sisteme',
-    titleAccent: 'pe care le putem construi',
+    label: 'Exemple',
+    title: 'Cum arată',
+    titleAccent: 'în practică',
     subtitle:
-      'Exemple de sisteme custom pe care le putem construi în jurul tool-urilor, workflow-ului și obiectivelor business-ului tău.',
+      'Scenarii reale pe care le pot construi pentru tine, adaptate la tool-urile și procesul firmei tale.',
     items: [
       {
         icon: 'MessageSquare',
-        title: 'Asistent AI pentru inbox',
+        title: 'Mesaje la ore târzii',
         description:
-          'Răspunde la întrebări repetitive, colectează detalii și trimite către om doar ce are nevoie de intervenție umană.',
-      },
-      {
-        icon: 'Filter',
-        title: 'Sistem de calificare lead-uri',
-        description:
-          'Pune întrebările potrivite, filtrează lead-urile serioase, actualizează CRM-ul și trimite follow-up-uri automat.',
-      },
-      {
-        icon: 'BarChart2',
-        title: 'Sistem automat de raportare',
-        description: 'Transformă date brute în rapoarte săptămânale sau lunare fără copy-paste manual.',
+          'Un client scrie la 23:00: „Aveți loc mâine?”. Asistentul AI îi răspunde pe loc, îi propune ore libere și îți lasă cererea gata de confirmat dimineața.',
       },
       {
         icon: 'Calendar',
-        title: 'Automatizare programări',
-        description: 'Colectează cereri, verifică disponibilitatea, trimite confirmări și reduce programările pierdute.',
+        title: 'Programări fără telefon',
+        description:
+          'Clientul alege ora pe site, primește confirmare pe email și un reminder cu o zi înainte. Tu vezi totul în calendar, fără niciun apel.',
       },
       {
-        icon: 'BookOpen',
-        title: 'Asistent intern de knowledge',
+        icon: 'Filter',
+        title: 'Lead-uri care nu se pierd',
         description:
-          'Permite echipei să pună întrebări pe baza documentelor, SOP-urilor, FAQ-urilor și informațiilor interne.',
+          'Cineva completează formularul de ofertă. Datele intră automat în CRM, primești notificare, iar clientul primește un follow-up dacă nu răspunde în 2 zile.',
+      },
+      {
+        icon: 'BarChart2',
+        title: 'Raportul de luni dimineață',
+        description:
+          'În fiecare luni primești pe email un rezumat: câte cereri au venit, de unde, câte s-au transformat în clienți. Nimeni nu mai face copy-paste în Excel.',
       },
       {
         icon: 'FileText',
-        title: 'Agent pentru documente și date',
-        description: 'Citește, extrage și direcționează informații din formulare, PDF-uri, emailuri și spreadsheet-uri.',
+        title: 'Documente citite automat',
+        description:
+          'Facturile și PDF-urile primite pe email sunt citite de AI, datele importante sunt extrase și puse în tabelul sau aplicația potrivită.',
+      },
+      {
+        icon: 'BookOpen',
+        title: 'Răspunsuri pentru echipă',
+        description:
+          'Un angajat nou întreabă „Cum facem returul?”. Asistentul intern răspunde din procedurile firmei, fără să te mai întrerupă pe tine.',
       },
     ],
   },
@@ -156,56 +228,56 @@ export const ro: Translations = {
     titleAccent: 'FrancAI',
     before: {
       title: 'Înainte',
-      text: 'Întrebări repetitive, actualizări manuale, copy-paste, follow-up-uri și rapoarte făcute de mână.',
+      text: 'Răspunzi la aceleași întrebări de zece ori pe zi, muți date de mână dintr-o aplicație în alta, uiți follow-up-uri și faci rapoarte în Excel.',
     },
     after: {
       title: 'După',
-      text: 'Sistemele AI preiau munca repetitivă, actualizează tool-urile, trimit follow-up-uri, creează rapoarte și notifică echipa când este nevoie de intervenție umană.',
+      text: 'Întrebările repetitive primesc răspuns automat, datele circulă singure, follow-up-urile pleacă la timp, iar rapoartele vin pe email. Tu intervii doar unde contează.',
     },
   },
   audit: {
-    label: 'Audit gratuit de automatizare',
-    title: 'Auditul tău gratuit',
-    titleAccent: 'de automatizare',
-    subtitle: 'Nu știi ce poate fi automatizat? Tocmai pentru asta există auditul.',
+    label: 'Audit gratuit',
+    title: 'Află ce poți',
+    titleAccent: 'automatiza',
+    subtitle: 'Nu știi de unde să începi? Asta e rostul auditului. Durează un apel și nu te obligă la nimic.',
     items: [
-      'Mapăm munca repetitivă din business-ul tău',
-      'Identificăm ce taskuri pot fi automatizate realist',
-      'Recomandăm cea mai bună primă automatizare',
-      'Primești un plan clar înainte să te angajezi la ceva',
+      'Îmi arăți ce faci zilnic în firmă și ce te consumă',
+      'Identific ce se poate automatiza realist și ce nu',
+      'Îți recomand prima automatizare, cea cu cel mai mare impact',
+      'Primești un plan clar în scris, înainte să decizi ceva',
     ],
     cta: 'Primește auditul gratuit',
   },
   process: {
-    label: 'Cum funcționează',
+    label: 'Cum lucrăm',
     title: 'Cum',
-    titleAccent: 'funcționează',
-    subtitle: 'De la descoperire până la un sistem funcțional implementat.',
+    titleAccent: 'lucrăm',
+    subtitle: 'De la primul apel până la un sistem care rulează în firma ta.',
     steps: [
       {
         number: '01',
-        title: 'Descoperim',
-        description: 'Înțelegem business-ul tău, tool-urile și munca repetitivă care încetinește echipa.',
+        title: 'Discutăm',
+        description: 'Un apel în care îmi povestești firma, tool-urile și ce te consumă.',
       },
       {
         number: '02',
-        title: 'Mapăm',
-        description: 'Transformăm workflow-ul actual într-un plan clar și acționabil de automatizare.',
+        title: 'Planific',
+        description: 'Primești un plan scris: ce construiesc, cum funcționează și ce costă.',
       },
       {
         number: '03',
-        title: 'Construim',
-        description: 'Creăm un sistem AI custom în jurul procesului tău exact.',
+        title: 'Construiesc',
+        description: 'Construiesc site-ul sau automatizarea pe procesul tău exact și îți arăt progresul.',
       },
       {
         number: '04',
         title: 'Testăm',
-        description: 'Rafinăm automatizarea și adăugăm reguli de siguranță pentru a funcționa fiabil.',
+        description: 'Testăm împreună pe situații reale și adaug reguli de siguranță.',
       },
       {
         number: '05',
         title: 'Lansăm',
-        description: 'Implementăm, monitorizăm și îmbunătățim sistemul pe baza utilizării reale.',
+        description: 'Pun sistemul live și îți arăt cum se folosește.',
       },
     ],
   },
@@ -232,73 +304,73 @@ export const ro: Translations = {
     titleAccent: 'frecvente',
     items: [
       {
+        q: 'Cu cine lucrez concret?',
+        a: 'Direct cu mine, Robert Franciuc, fondatorul FrancAI. Nu treci prin account manageri sau intermediari: omul cu care vorbești e omul care construiește.',
+      },
+      {
         q: 'Faceți website-uri și automatizări împreună sau separat?',
-        a: 'Ambele. Poți comanda doar un website, doar o automatizare sau un pachet complet: un site nou conectat direct la automatizări, cu formulare care ajung în CRM, programări automate și răspunsuri AI la mesaje.',
+        a: 'Ambele. Poți comanda doar un site, doar o automatizare sau un pachet complet: un site nou conectat direct la automatizări, cu formulare care ajung în CRM, programări automate și răspunsuri AI la mesaje.',
       },
       {
         q: 'Contează unde este firma mea?',
-        a: 'Nu. Lucrăm online cu afaceri din toată România și din străinătate, prin apeluri video și email. Comunicăm în română sau engleză.',
+        a: 'Nu. Lucrez online cu afaceri din toată România și din străinătate, prin apeluri video și email, în română sau engleză.',
       },
       {
         q: 'Cât costă un website?',
-        a: 'Depinde de numărul de pagini, funcționalități și integrări. După o discuție scurtă primești o ofertă clară, adaptată business-ului tău.',
+        a: 'Depinde de numărul de pagini, funcționalități și integrări. După un apel scurt primești o ofertă fixă, în scris, fără costuri ascunse.',
+      },
+      {
+        q: 'Cât costă o automatizare sau un chatbot AI?',
+        a: 'Depinde de cât de complex e procesul și ce tool-uri sunt implicate. Auditul gratuit îmi arată exact ce ai nevoie, iar după el primești un preț clar.',
       },
       {
         q: 'Trebuie să știu exact ce vreau să automatizez?',
-        a: 'Nu. Trebuie doar să ne spui ce pare repetitiv, lent sau manual. Te ajutăm noi să identifici ce poate fi automatizat.',
+        a: 'Nu. Îmi spui doar ce pare repetitiv, lent sau manual. Eu identific ce se poate automatiza și ce merită făcut primul.',
       },
       {
-        q: 'Este doar pentru un anumit tip de business?',
-        a: 'Nu. FrancAI este pentru orice business cu workflow-uri repetitive. Ne concentrăm pe proces, nu doar pe industrie.',
-      },
-      {
-        q: 'Folosiți template-uri generice?',
-        a: 'Nu. Putem folosi componente testate, dar fiecare sistem este construit în jurul tool-urilor, workflow-ului și obiectivelor tale.',
-      },
-      {
-        q: 'Poate AI-ul să vorbească direct cu clienții?',
-        a: 'Da, acolo unde are sens. Putem adăuga pași de aprobare, predare către om și reguli de siguranță pentru a automatiza doar ce trebuie automatizat.',
+        q: 'Poate AI-ul să vorbească direct cu clienții mei?',
+        a: 'Da, acolo unde are sens. Adaug pași de aprobare, predare către om și reguli de siguranță, ca AI-ul să răspundă doar la ce știe sigur.',
       },
       {
         q: 'Ce tool-uri puteți conecta?',
-        a: 'Putem conecta multe tool-uri comune prin API-uri, n8n, CRM-uri, formulare, email, spreadsheet-uri, baze de date, tool-uri de messaging și integrări custom.',
+        a: 'Majoritatea tool-urilor uzuale: email, formulare, Google Sheets, CRM-uri, calendare, baze de date și aplicații de mesagerie, prin API-uri, n8n sau integrări custom.',
       },
       {
-        q: 'Cât costă un sistem de automatizare?',
-        a: 'Depinde de complexitatea workflow-ului, tool-urile implicate și nivelul de AI necesar. Auditul gratuit ne ajută să înțelegem ce ai nevoie și să recomandăm cea mai bună primă automatizare.',
+        q: 'Folosiți template-uri generice?',
+        a: 'Nu. Folosesc componente testate, dar fiecare site și fiecare sistem e construit pe tool-urile, procesul și obiectivele tale.',
       },
       {
         q: 'Ce se întâmplă după audit?',
-        a: 'Primești un plan clar de automatizare. Dacă are sens, putem construi apoi primul sistem pentru tine.',
+        a: 'Primești un plan clar. Dacă are sens pentru tine, construiesc primul sistem. Dacă nu, rămâi cu planul, gratuit.',
       },
     ],
   },
   contact: {
-    label: 'Contactează-ne',
-    title: 'Hai să vedem',
-    titleAccent: 'ce poți automatiza',
+    label: 'Contact',
+    title: 'Spune-mi ce te',
+    titleAccent: 'consumă zilnic',
     subtitle:
-      'Spune-ne ce face echipa ta manual. Îți analizăm workflow-ul și îți arătăm unde automatizarea poate economisi timp.',
+      'Scrie-mi ce faci manual sau repetitiv. Mă uit pe procesul tău și îți spun sincer ce se poate automatiza și ce nu.',
     form: {
       name: 'Nume complet',
       email: 'Adresă de email',
       company: 'Companie sau brand (opțional)',
       website: 'Website sau profil social (opțional)',
       message:
-        'Spune-ne ce face echipa ta manual sau repetitiv. Exemple: răspunsuri la mesaje, actualizare CRM, rapoarte, mutare date, procesare documente, programări sau follow-up-uri.',
+        'Ce faci manual sau repetitiv? Exemple: răspunsuri la mesaje, programări, actualizare CRM, rapoarte, mutat date, procesat documente sau follow-up-uri. Sau: am nevoie de un site nou.',
       submit: 'Primește auditul gratuit',
       submitting: 'Se trimite...',
-      success: 'Mesaj trimis! Te contactăm în 24 de ore.',
+      success: 'Mesaj trimis! Îți răspund personal în 24 de ore.',
     },
     cta: {
       title: 'Fără nicio obligație.',
-      subtitle: 'Spune-ne ce pare repetitiv. Îți analizăm workflow-ul și îți spunem ce poate fi automatizat.',
+      subtitle: 'Îmi spui ce pare repetitiv, eu îți spun ce se poate automatiza. Decizia rămâne a ta.',
       button: 'Primește auditul gratuit',
     },
   },
   footer: {
     description:
-      'Creare site-uri și automatizări AI pentru afaceri din România și din străinătate. Website-uri rapide și sisteme custom care preiau munca repetitivă.',
+      'Creare site-uri și automatizări AI pentru firme din România și din străinătate. Site-uri care aduc clienți și sisteme care preiau munca repetitivă.',
     links: {
       services: 'Servicii',
       work: 'Exemple',

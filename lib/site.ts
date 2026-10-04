@@ -9,7 +9,9 @@ export const SITE = {
   city: 'Suceava',
   region: 'Județul Suceava',
   country: 'RO',
-  title: 'Creare Site-uri și Automatizări AI pentru Afaceri | FrancAI',
+  founder: 'Robert Franciuc',
+  founderImage: '/assets/rsz_poza-cutout_cleanup.png',
+  title: 'Creare Site-uri și Automatizări AI pentru Firme | FrancAI',
   description:
-    'FrancAI creează website-uri moderne și automatizări AI pentru afaceri din România și din străinătate. Site-uri rapide, optimizate SEO, conectate la sisteme care preiau munca repetitivă. Audit gratuit.',
+    'Site-uri rapide care aduc clienți și automatizări AI care preiau munca repetitivă: chatbot, programări, CRM, rapoarte. Lucrezi direct cu fondatorul. Audit gratuit.',
 }

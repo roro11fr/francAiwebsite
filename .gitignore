@@ -16,3 +16,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 tsconfig.tsbuildinfo
+
+# original testimonial uploads (copies live in public/testimoniale)
+testimionale/

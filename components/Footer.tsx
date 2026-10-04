@@ -2,22 +2,21 @@
 
 import { useLanguage } from '@/context/LanguageContext'
 import { LogoMark } from '@/components/LogoMark'
+import { SITE } from '@/lib/site'
+import { InstagramIcon } from '@/components/InstagramIcon'
 
 export function Footer() {
   const { t } = useLanguage()
   const year = new Date().getFullYear()
 
   const links = [
-    { label: t.footer.links.services, href: '#services' },
-    { label: t.footer.links.work, href: '#examples' },
-    { label: t.footer.links.process, href: '#process' },
-    { label: t.footer.links.contact, href: '#contact' },
+    { label: t.footer.links.services, href: '/#services' },
+    { label: t.nav.clients, href: '/#testimoniale' },
+    { label: t.footer.links.work, href: '/#examples' },
+    { label: t.footer.links.about, href: '/#about' },
+    { label: t.footer.links.process, href: '/#process' },
+    { label: t.footer.links.contact, href: '/#contact' },
   ]
-
-  const handleNav = (href: string) => {
-    const el = document.querySelector(href)
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
-  }
 
   return (
     <footer className="bg-ink-900 border-t border-white/8">
@@ -26,8 +25,12 @@ export function Footer() {
         {/* Top — brand statement */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 py-12 border-b border-white/8">
           <a
-            href="#"
-            onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
+            href="/"
+            onClick={(e) => {
+              if (window.location.pathname !== '/') return
+              e.preventDefault()
+              window.scrollTo({ top: 0, behavior: 'smooth' })
+            }}
             className="flex items-center gap-3 group w-fit"
           >
             <LogoMark id="footer" className="h-10 w-auto group-hover:opacity-80 transition-opacity" />
@@ -47,27 +50,38 @@ export function Footer() {
         {/* Bottom — links + copyright */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 py-8">
 
-          {/* Nav links — horizontal */}
-          <nav className="flex flex-wrap gap-x-6 gap-y-2">
-            {links.map((link) => (
-              <button
-                key={link.href}
-                onClick={() => handleNav(link.href)}
-                className="text-zinc-600 hover:text-violet-400 text-sm font-ui transition-colors duration-200"
-              >
-                {link.label}
-              </button>
-            ))}
-          </nav>
+          {/* Nav links */}
+          <div className="flex flex-col gap-3">
+            <nav className="flex flex-wrap gap-x-6 gap-y-2">
+              {links.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-zinc-600 hover:text-violet-400 text-sm font-ui transition-colors duration-200"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </nav>
+          </div>
 
           {/* Copyright + email */}
           <div className="flex flex-col sm:items-end gap-1">
             <p className="text-zinc-600 text-xs font-ui">{t.ui.location}</p>
             <a
-              href="mailto:francaiagency@gmail.com"
+              href={`mailto:${SITE.email}`}
               className="text-zinc-600 hover:text-violet-400 text-xs font-ui transition-colors"
             >
-              francaiagency@gmail.com
+              {SITE.email}
+            </a>
+            <a
+              href={SITE.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-zinc-600 hover:text-violet-400 text-xs font-ui transition-colors"
+            >
+              <InstagramIcon size={12} />
+              @francai.ro
             </a>
             <a href="/confidentialitate" className="text-zinc-600 hover:text-violet-400 text-xs font-ui transition-colors">
               Politica de confidențialitate
